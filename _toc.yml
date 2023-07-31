@@ -1,0 +1,19 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Unit 1
+    chapters:
+    - file: unit1-chap1
+    - file: unit1-chap2
+    - file: unit1-chap3
+    - file: unit1-chap4
+    - file: unit1-chap5
+  - caption: Unit 2
+    chapters:
+    - file: unit2-chap1 
+    - file: unit2-chap2
+    - file: unit2-chap3
+    - file: unit2-chap4

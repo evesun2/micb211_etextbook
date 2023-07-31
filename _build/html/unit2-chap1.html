@@ -1,0 +1,854 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 1: The Human Microbiome &#8212; MICB 211 Foundations in Microbiology eTextbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unit2-chap1';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Chapter 2: Community Lifestyle of a Biofilm" href="unit2-chap2.html" />
+    <link rel="prev" title="Chapter 5: Sensing and Responding to the Environment" href="unit1-chap5.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    MICB 211 E-Textbook Acknowledgements
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unit 1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap1.html">Chapter 1: Introduction to Microbiology and Data Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap2.html">Chapter 2: Microbial Cell Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap3.html">Chapter 3: Microbial Growth in the Lab and in Nature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap4.html">Chapter 4: Gene Expression and Regulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap5.html">Chapter 5: Sensing and Responding to the Environment</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unit 2</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 1: The Human Microbiome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit2-chap2.html">Chapter 2: Community Lifestyle of a Biofilm</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Funit2-chap1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/unit2-chap1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 1: The Human Microbiome</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-the-human-microbiome">1.1 Overview of the Human Microbiome</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-microbiota">1.1.1 What is the Microbiota</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#host-and-microbiota-interactions">1.1.2 Host and Microbiota Interactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chronology-and-source-of-microbiota-for-humans">1.1.3 Chronology and Source of Microbiota for Humans</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-that-affect-the-composition-of-the-microbiota">1.1.4 Factors that affect the composition of the microbiota</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#physiological-niches-of-the-human-microbiome">1.2 Physiological Niches of the Human Microbiome</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#location-of-the-microbiota">1.2.1 Location of the microbiota</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microbiota-of-the-skin">1.2.2 Microbiota of the Skin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microbiota-of-the-oral-cavity">1.2.3 Microbiota of the Oral Cavity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microbiota-of-the-gastrointestinal-tract">1.2.4 Microbiota of the Gastrointestinal Tract</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microbiota-of-the-respiratory-tract">1.2.5 Microbiota of the Respiratory Tract</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microbiota-of-the-urogenital-tract">1.2.6 Microbiota of the Urogenital Tract</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#essentiality-of-the-microbiota">1.3 Essentiality of the Microbiota</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#studying-the-microbiota">1.4 Studying the Microbiota</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-darwinian-tree-of-life-tol">1.4.1 The Darwinian Tree of Life (TOL)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-tree-of-life">1.4.2 Building a Tree of Life</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-woese-tree-of-life">1.4.3 The Woese Tree of Life</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determining-the-composition-of-the-microbiota">1.4.4 Determining the composition of the Microbiota</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-investigating-the-effects-of-maternal-age-on-the-infant-microbiome">Case Study: Investigating the effects of maternal age on the infant microbiome</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References:</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-1-the-human-microbiome">
+<h1>Chapter 1: The Human Microbiome<a class="headerlink" href="#chapter-1-the-human-microbiome" title="Permalink to this heading">#</a></h1>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Learning Objectives</strong></p>
+<p class="sd-card-text">By the end of this chapter, students will be expected to:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">describe what the microbiota is and where it is located on the human body.</p></li>
+<li><p class="sd-card-text">understand the benefits and potential harms of host-microbiota interactions.</p></li>
+<li><p class="sd-card-text">describe the factors or conditions that may promote the presence of certain bacterial species in different locations of the body</p></li>
+<li><p class="sd-card-text">understand what factors can affect microbiota diversity and composition and how.</p></li>
+<li><p class="sd-card-text">describe why the 16S rRNA gene is used to study microbial diversity</p></li>
+<li><p class="sd-card-text">evaluate microbial diversity of different microbial communities using key parameters such as richness, abundance, and phylogenetic distance</p></li>
+<li><p class="sd-card-text">interpret microbiome data specifically data on microbial diversity</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="overview-of-the-human-microbiome">
+<h2>1.1 Overview of the Human Microbiome<a class="headerlink" href="#overview-of-the-human-microbiome" title="Permalink to this heading">#</a></h2>
+<div class="section" id="what-is-the-microbiota">
+<h3>1.1.1 What is the Microbiota<a class="headerlink" href="#what-is-the-microbiota" title="Permalink to this heading">#</a></h3>
+<p>The human body is an ideal habitat for many bacteria and other microorganisms.  While the body’s internal tissues, such as blood, brain, and muscle, are normally sterile, the surface tissues such as the skin and mucous membranes are constantly in contact with microorganisms present in the environment. For example, our whole digestive “tube” from the mouth through the intestines and out the other end is constantly being exposed to environmental microbes. These non-sterile areas of the body are a series of <strong>microenvironments</strong> and are colonized by certain microbial species. In general, the same bacterial species colonize the same anatomical sites in all people. These communities are referred to as the <strong>microbiota</strong> (Fig 87). Some organisms establish permanent residence within the host while others are more transient and are present for limited periods of time, from days to weeks to months.</p>
+<div class="figure align-default" id="fig87">
+<img alt="_images/1-13.png" src="_images/1-13.png" />
+<p class="caption"><span class="caption-number">Fig. 87 </span><span class="caption-text">Microbiota bacteria that inhabit the skin (left) and adhering to the surface of colon cells (right) (1).</span><a class="headerlink" href="#fig87" title="Permalink to this image">#</a></p>
+</div>
+<p>The microbiota of the human body is very complex and consists of more than several hundred species of microorganisms.  Bacteria are the most numerous and obvious microbial components of the microbiota, but a few eukaryotic fungi and some methanogenic Archaea colonize the lower intestinal tract.  Some of these organisms can only be found in association with a host, whereas others can also be found in the environment.</p>
+</div>
+<div class="section" id="host-and-microbiota-interactions">
+<h3>1.1.2 Host and Microbiota Interactions<a class="headerlink" href="#host-and-microbiota-interactions" title="Permalink to this heading">#</a></h3>
+<p>The association between the host and the microbiota is dynamic, and for the most part, a relationship that benefits both the host and the bacteria. That being said, there are some risks. A summary of these interactions is listed below:</p>
+<ol class="arabic simple">
+<li><p><strong>Benefits to the bacteria:</strong></p></li>
+</ol>
+<p>Bacteria in the microbiome utilize the host in a number of ways. The host environment is a continuous source of nutrients as well as a stable environment. For example, the host may play a protective role against damaging conditions such as desiccation and temperature extremes. Many bacteria can also utilize the host as a mode of transportation.</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Host benefits:</strong></p></li>
+</ol>
+<p>Microbiota can be beneficial to the host in many ways. One such advantage is minimizing the hosts susceptibility to pathogens, through microbial <strong>antagonism</strong>. This occurs when the colonization of the native microbiota inhibits colonization by pathogens. This occurs through a combination of mechanisms including: occupying adherence sites, utilizing nutrients, chemical inhibition, and modulating pH and oxygen availability.</p>
+<p>Another benefit of the microbiota (specifically that of the gastrointestinal tract) is <strong>nutritional synergism</strong>. Bacteria synthesize and excrete vitamins such as vitamin K and vitamin B12. These can then be absorbed as nutrients by host cells. Bacteria are also capable of converting bile acids to steroids that can be utilized by the host.</p>
+<p>A summary of some of the known biochemical and metabolic contributions of intestinal microorganisms can be seen in Table 1.1.</p>
+<p>Table 1.1. Biochemical and metabolic contributions of intestinal microbiota.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Process</p></th>
+<th class="head"><p>Product</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Vitamin synthesis</p></td>
+<td><p>Thiamine, riboflavin, pyridoxin, B12,   K</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gas production</p></td>
+<td><p>CO2, CH4, H2</p></td>
+</tr>
+<tr class="row-even"><td><p>Odor production</p></td>
+<td><p>Hydrogen sulfide, ammonia, amines,   indole, skatole, butyric acid</p></td>
+</tr>
+<tr class="row-odd"><td><p>Organic acid production</p></td>
+<td><p>Acetic, propionic, butyric acids</p></td>
+</tr>
+<tr class="row-even"><td><p>Glycosidase reactions</p></td>
+<td><p>β-Glucuronidase, β-galactosidase,   β-glucosidase, α-glucosidase, α-galactosidase</p></td>
+</tr>
+<tr class="row-odd"><td><p>Steroid metabolism (bile acids)</p></td>
+<td><p>Esterified, dehydroxylates,   oxidized, or reduced steroids</p></td>
+</tr>
+</tbody>
+</table>
+<p>The microbiota has also been found to stimulate the immune system through induction of an antibody response. These low levels of antibodies (sometimes called ‘natural antibodies’) can cross react with certain related pathogens, and thereby prevent infection or invasion.</p>
+<ol class="arabic simple" start="3">
+<li><p><strong>The microorganisms of the microbiota are adapted to their host:</strong></p></li>
+</ol>
+<p>The bacteria of the microbiota have adapted to survive specifically within their host. For instance, the physical association between the microbiota and the host likely involves biochemical interactions between bacterial surface components (<strong>ligands or adhesins</strong>) and host cell molecular <strong>receptors</strong>. Another example of microbiota-host adaptation is how the bacteria of the microbiota resist innate immune defences and do not elicit strong adaptive immune responses that would lead to their elimination. The mechanisms involved in this adaptation are not well understood.</p>
+<ol class="arabic simple" start="4">
+<li><p><strong>Harmful aspects of the host-microbiota relationship include:</strong></p></li>
+</ol>
+<p>Not all host-microbiota interactions are beneficial. Translocation of bacteria from one niche to another can be harmful. For example, <em>Escherichia coli</em>, which is a normal resident in the gastrointestinal (GI) tract, may cause urinary tract infections when introduced into the urinary tract.</p>
+<p>Certain normal residents of microenvironments in the body may not be harmful when the host is healthy but may become harmful or pathogenic under conditions when the host is immunocompromised or suffers from an external ailment. These are known as <strong>opportunistic pathogens</strong>. These pathogens take advantage of host attenuated conditions to establish infections. Consider that someone with a cold or flu may be more prone to infections of the ear or throat due to opportunistic pathogens. <em>E. coli</em>, our model organism, is not only a regular resident of the gut but also an opportunistic pathogen responsible for intestinal infections when host health is attenuated.</p>
+<ol class="arabic simple" start="5">
+<li><p><strong>Host-microbiota interactions that may help or harm the host:</strong></p></li>
+</ol>
+<p>Recent findings show how the intestinal microbiota also affects the brain. This is called the gut-brain axis, and it is bidirectional. The brain acts on gastrointestinal and immune functions that help to shape the gut’s microbial makeup. In turn, the gut microbes affect inflammatory responses and make neuroactive compounds, including neurotransmitters and metabolites, both of which have effects on the brain. This can have positive or negative effects on many brain functions and disorders, including, for example, development or prevention of anxiety and Multiple Sclerosis. This is a new and exciting area of microbiome research!</p>
+<p>The balance of microbiota are also likely contributors to the development or prevention of colorectal cancer. This is a complex phenomenon involving many components, including both host factors and environmental sources (i.e., diet, antibiotic use), and is a highly investigated area. We are continuously discovering more aspects of host-microbiota interaction that go beyond what has been covered in this section.</p>
+</div>
+<div class="section" id="chronology-and-source-of-microbiota-for-humans">
+<h3>1.1.3 Chronology and Source of Microbiota for Humans<a class="headerlink" href="#chronology-and-source-of-microbiota-for-humans" title="Permalink to this heading">#</a></h3>
+<p>The fetal environment is sterile, and prior to birth, humans are free of microorganisms. The microbiota is obtained from the environment immediately after birth as a result of:</p>
+<ul class="simple">
+<li><p>Passage through the birth canal</p></li>
+<li><p>Exposure to other humans (and pets)</p></li>
+<li><p>Ingestion of food and fluids</p></li>
+<li><p>Inhalation of air-borne microorganisms.</p></li>
+</ul>
+<p>A variety of bacterial species enter the infant but only those capable of colonizing a particular microenvironment will remain. Once a stable microbiota is established, the composition of the microbiota remains relatively constant, although changes can be induced (e.g., a change in diet). These bacterial colonizers are acquired quickly.</p>
+</div>
+<div class="section" id="factors-that-affect-the-composition-of-the-microbiota">
+<h3>1.1.4 Factors that affect the composition of the microbiota<a class="headerlink" href="#factors-that-affect-the-composition-of-the-microbiota" title="Permalink to this heading">#</a></h3>
+<p>In addition to a microbe’s ability to colonize a particular anatomical niche, there are several external factors that affect composition. Diet is a major contributor to the microbial makeup. For example, an infant’s diet of milk encourages the establishment of lactic acid bacteria as part of the microbiota. Infection is another contributor to microbial diversity and composition. The infection itself results in a temporary increase in pathogen numbers, but the antibiotic treatment, which often ensues, is another major external factor. <strong>Antibiotic therapy</strong> may result in an overall decrease of microbiota. In the GI tract, this leaves the host susceptible to colonization by opportunistic bacteria (e.g., the overgrowth of Clostridium difficile may cause colitis, which is an inflammatory disease of the colon). After the antibiotic therapy is completed, the microbiota eventually re-establishes itself.</p>
+</div>
+</div>
+<div class="section" id="physiological-niches-of-the-human-microbiome">
+<h2>1.2 Physiological Niches of the Human Microbiome<a class="headerlink" href="#physiological-niches-of-the-human-microbiome" title="Permalink to this heading">#</a></h2>
+<div class="section" id="location-of-the-microbiota">
+<h3>1.2.1 Location of the microbiota<a class="headerlink" href="#location-of-the-microbiota" title="Permalink to this heading">#</a></h3>
+<p>In general, there are three explanations for why microbiota bacteria are located at a particular anatomical site (Fig 88).</p>
+<div class="figure align-default" id="fig88">
+<img alt="_images/1-21.png" src="_images/1-21.png" />
+<p class="caption"><span class="caption-number">Fig. 88 </span><span class="caption-text">Locations of the human microbiota. Environments discussed in this chapter are indicated in red.</span><a class="headerlink" href="#fig88" title="Permalink to this image">#</a></p>
+</div>
+<ol class="arabic simple">
+<li><p>Certain species of bacteria are invariably in one locale and never in another; meaning, they exhibit a tissue preference for colonization. One possible explanation for this observation is that the host provides an essential growth factor needed by the bacterium. Alternatively, some locations of the host are inherently inhospitable for the colonization of bacteria. For example, due to the production of stomach acids, bile salts, and lysozyme, certain bacteria are unable to colonize regions of the GI tract.</p></li>
+<li><p>At colonization sites, the bacteria attach to the host receptors using specific bacterial ligands (e.g., capsules, cell wall components, fimbriae). These host receptors that interact with the bacterial ligands are expressed only at certain locations in the host’s body.</p></li>
+<li><p>Some members of the microbiota are capable of constructing bacterial <strong>biofilms</strong> on the surface of a tissue (or implants such as catheters). Bacteria are also capable of growth on preexisting biofilms. In fact, many biofilms are a mixture of microorganisms, although one member may predominate in the biofilm. We’ll explore biofilms more extensively in Unit 2 Chapter 2.</p></li>
+</ol>
+<p>It has been estimated that the body of the normal human host harbors about 1011 bacteria on the skin, <span class="math notranslate nohighlight">\(10^12\)</span> in the mouth, and <span class="math notranslate nohighlight">\(10^14\)</span> in the gastrointestinal tract (2) (of which there is a substantial turnover of <span class="math notranslate nohighlight">\(10^13\)</span> bacteria per day). This is far greater than the number of eukaryotic cells that comprise all organs within the human host, the number of which is approximately <span class="math notranslate nohighlight">\(10^13\)</span> cells.</p>
+</div>
+<div class="section" id="microbiota-of-the-skin">
+<h3>1.2.2 Microbiota of the Skin<a class="headerlink" href="#microbiota-of-the-skin" title="Permalink to this heading">#</a></h3>
+<p>The average human adult has approximately 2 <span class="math notranslate nohighlight">\(m^2\)</span> of skin surface. Since the skin surface varies in chemical composition and moisture content, the density and composition of the microbiota of the skin varies with anatomical locale.</p>
+<p>Most skin microorganisms are associated directly or indirectly with sweat glands. The warmth and high moisture content of the armpit, genital region, and areas between the toes supports the activity and growth of relatively high densities of bacterial cells (upwards of 1,000,000 per <span class="math notranslate nohighlight">\(cm^2\)</span>), while the density of bacterial populations on smooth, dry skin is generally low (100s or 1000s per <span class="math notranslate nohighlight">\(cm^2\)</span>) (3).</p>
+<p>The skin is constantly being exposed to microorganisms. The majority of these microorganisms are transient, that is, they are unable to multiply and usually die from either the skin’s low moisture content or low pH due to the organic acid content. They are also outcompeted by the permanent residents of the microbiota that are able to multiply in such an environment.</p>
+<p>Some examples of bacteria that may be found as part of the microbiota of skin include <em>Staphylococcus epidermidis</em> and <em>Micrococcus sp</em>. These are generally non-pathogenic and considered to be <strong>commensal</strong>. In contrast, <em>Propionibacterium acnes</em>, the bacterium responsible for acne, can metabolize the fatty acids and grow on the skin. Sometimes, potentially pathogenic Staphylococcus aureus can be found on the hands and the face (particularly on skin surrounding the nostrils).</p>
+<p>Various factors affect the microbiota of the skin. These include:</p>
+<ul class="simple">
+<li><p>Weather – this may change the temperature and moisture content of the skin</p></li>
+<li><p>Age – young children tend to have a more varied microbiota</p></li>
+<li><p>Personal hygiene</p></li>
+<li><p>Diet</p></li>
+</ul>
+</div>
+<div class="section" id="microbiota-of-the-oral-cavity">
+<h3>1.2.3 Microbiota of the Oral Cavity<a class="headerlink" href="#microbiota-of-the-oral-cavity" title="Permalink to this heading">#</a></h3>
+<p>The oral cavity is one of the more complex microbial habitats in the body. Saliva itself is not a good culture medium as it contains few nutrients and contains antibacterial substances such as lysozyme and lactoperoxidase. Lysozyme weakens bacterial cell walls and lactoperoxidase kills bacteria in a reaction that generates singlet oxygen, a type of reactive oxygen species. However, the presence of food particles and epithelial debris makes the mouth a favorable habitat for a great variety of bacteria.</p>
+<p>At birth, the oral cavity is sterile but rapidly becomes colonized during the first feeding. As the child grows, the emergence of teeth and related structures result in changes to microbiota composition. Prior to the eruption of teeth in the child, the bacterial populations of the microbiota include aerotolerant anaerobes as well as a few aerobes. As the teeth appear, there is a shift towards anaerobes that are adapted for growth on the tooth surface and in the gingival crevices.</p>
+<p>Bacteria can grow on tooth surfaces in thick layers called <strong>plaque</strong>. Plaque is a type of complex biofilm. Dental plaque formation is initiated by the deposit of a thin organic film of acidic glycoproteins from the saliva. This film is several micrometers thick and provides an attachment and colonization site for a few species of <em>Streptococcus</em>. The microorganisms in plaque produce adherent substances (glucans) that encourage further colonization. The bacteria then multiply extensively to form a biofilm.</p>
+<p>Dental caries (cavities) are the destruction of the enamel, dentin or cementum of teeth caused by acid-producing bacteria in plaque. Lactic acid bacteria produce lactic acid from the fermentation of sugars and other carbohydrates in the diet of the host. <em>Streptococcus mutans</em> has most consistently been associated with the initiation of dental caries, but other lactic acid bacteria are probably involved as well. These organisms normally colonize the occlusal fissures (natural grooves in the teeth) and contact points between the teeth.</p>
+<p>Periodontal diseases are bacterial infections that affect the supporting structures of the teeth (gingiva, cementum, periodontal membrane and alveolar bone). The most common form, gingivitis, is an inflammatory condition of the gums.</p>
+</div>
+<div class="section" id="microbiota-of-the-gastrointestinal-tract">
+<h3>1.2.4 Microbiota of the Gastrointestinal Tract<a class="headerlink" href="#microbiota-of-the-gastrointestinal-tract" title="Permalink to this heading">#</a></h3>
+<p>The majority of the microbiota in the human body resides in the gastrointestinal (GI) tract. The GI tract consists of the stomach, small intestine and large intestine. The intestinal microbiota is a complex ecosystem containing several hundred bacterial species in which the majority of these bacteria are anaerobes. Some examples of anaerobic microorganisms include <em>E. coli</em> (a facultative anaerobe), Bacteroides (a strict anaerobe) and Lactobacillus (an aerotolerant anaerobe).</p>
+<p>The stomach is very acidic and is a barrier to most microbial growth. The bacterial count of the stomach is usually very low and is considered to be devoid of any significant microbiota. Only a few acid-tolerant bacteria can be cultured from the stomach. For example, <em>Helicobacter pylori</em> is one of the few bacteria that can colonize the stomach wall. This bacterium is the causative agent of gastric ulcers and gastric cancer and infects over half the world’s population.</p>
+<p>The character of the microbiota changes along the length of the gastrointestinal tract (Fig 89). Bacteria occupy the lumen, overlie the epithelial cells, and adhere to the mucosa of the intestines. In normal hosts, the duodenal microbiota is sparse (about <span class="math notranslate nohighlight">\(10^3\)</span>/g of contents) (2). Most of these organisms are derived from the oral cavity and pass through the gut with each meal. The ileum (last part of the small intestine) contains a moderately mixed microbiota (about <span class="math notranslate nohighlight">\(10^8\)</span>/g of contents)2. The microbiota of the large intestine is dense (about <span class="math notranslate nohighlight">\(10^{11}\)</span>/g of contents) and contains a diverse population of bacteria (2). The large intestine can be viewed as an anaerobic bacterial fermentation chamber. Any oxygen that may be present is quickly consumed by facultative anaerobes.</p>
+<p>At birth, the entire intestinal tract is sterile, but bacteria enter with the first feeding of the infant. The initial colonizing bacteria will vary with the food source of the infant. Within a week, Bifidobacteria account for more than 90% of the total intestinal bacteria of breast-fed infants. The origin of the Bifidobacteria is still obscure. In bottle-fed infants, Bifidobacteria are present but are not the predominant component of the intestinal microbiota. When breast-fed infants are switched to a diet of cow’s milk or solid food, Enterobacteria, Bacteroides, Enterococci, Lactobacilli and Clostridia join the Bifidobacteria.</p>
+<div class="figure align-default" id="fig89">
+<img alt="_images/1-31.png" src="_images/1-31.png" />
+<p class="caption"><span class="caption-number">Fig. 89 </span><span class="caption-text">The location and main type of bacteria found in the gastrointestinal tract of healthy individuals.</span><a class="headerlink" href="#fig89" title="Permalink to this image">#</a></p>
+</div>
+</div>
+<div class="section" id="microbiota-of-the-respiratory-tract">
+<h3>1.2.5 Microbiota of the Respiratory Tract<a class="headerlink" href="#microbiota-of-the-respiratory-tract" title="Permalink to this heading">#</a></h3>
+<p>The nostrils are always heavily colonized, predominantly with <em>S. epidermidis</em> and sometimes with <em>S. aureus</em> (a potential pathogen). In contrast, the sinuses are normally sterile. A large number of bacterial species colonize the upper respiratory tract (nasopharynx). These microorganisms will colonize areas that are bathed with the secretions of the mucous membranes. Bacteria enter the upper respiratory tract in air during breathing but are trapped in the nasal passages and expelled with the nasal secretions.</p>
+<p>The lower respiratory tract (trachea, bronchi, and pulmonary tissues) is virtually free of microorganisms. Dust particles which may carry microorganisms are fairly large and are trapped in the upper respiratory tract. Furthermore, the lower respiratory tract is lined with ciliated epithelium. Any bacteria reaching the lower respiratory tract are swept upward by the beating action of the cilia toward the upper respiratory tract where they are removed by subsequently by coughing, sneezing, swallowing (i.e., mucocilary action).</p>
+<p>If the respiratory tract epithelium becomes damaged, as in bronchitis or viral pneumonia, the individual may become susceptible to infection by pathogens descending from the nasopharynx (e.g., <em>Haemophilus influenzae</em> or <em>Streptococcus pneumoniae</em>). The pathogen <em>Bordetella pertussis</em> is specifically able to colonize the tracheal epithelium of humans, allowing it to produce the disease pertussis (i.e whooping cough).</p>
+</div>
+<div class="section" id="microbiota-of-the-urogenital-tract">
+<h3>1.2.6 Microbiota of the Urogenital Tract<a class="headerlink" href="#microbiota-of-the-urogenital-tract" title="Permalink to this heading">#</a></h3>
+<p>Urine is normally sterile, and since the urinary tract is flushed with urine every few hours, microorganisms have problems gaining access and becoming established. Thus, the urogenital tract is normally sterile with the exception of the vagina and the distal 1 cm of the urethra.</p>
+<p>Lactobacillus sp. predominates in the vagina. These organisms generally lower the pH to around 4–5, which is optimal for the lactobacilli but inhibitory for the growth of many other bacteria. Loss of this protective effect by antibiotic therapy can lead to infection by Candida (i.e., ‘yeast infection’). The urethra may contain predominantly skin microorganisms including staphylococci, streptococci, and diphtheroids.</p>
+</div>
+</div>
+<div class="section" id="essentiality-of-the-microbiota">
+<h2>1.3 Essentiality of the Microbiota<a class="headerlink" href="#essentiality-of-the-microbiota" title="Permalink to this heading">#</a></h2>
+<p><strong>Gnotobiotic Organisms</strong></p>
+<p>Germ-free (gnotobiotic) animals and birds can be used to study the importance of the normal microbiota. Gnotobiotic literally means ‘known life’ but is typically used to mean germ free. Colonies of gnotobiotic animals and birds are established by isolating the first-generation offspring using sterile techniques. These offspring are then raised in germ-free environments. For mammals, this involves delivering the offspring by cesarean section. For birds, this means that the exterior surface of the egg is sterilized. Once the first generation has been established, they can be maintained and bred in germ-free environments.</p>
+<p>Characteristics of gnotobiotic animals include:</p>
+<p>a)	Abnormal anatomical and physiological features
+b)	Underdeveloped lymphatic tissue and poorly developed immune systems
+c)	Thin intestinal walls
+d)	Low antibody titer
+e)	Higher susceptibility to pathogens
+f)	Reduced susceptibility to certain disease processes which are dependent on the activity of microbes (e.g., dental caries).</p>
+<p>Scientists are still learning about the effects of being gnotobiotic on brain function but have already transplanted different species of gut bacteria to gnotobiotic mice and observed behavioural changes (4).</p>
+</div>
+<div class="section" id="studying-the-microbiota">
+<h2>1.4 Studying the Microbiota<a class="headerlink" href="#studying-the-microbiota" title="Permalink to this heading">#</a></h2>
+<p>One of the ways that we study the microbiota is by measuring microbial <strong>diversity</strong>. There are different ways that we define microbial diversity and depending on those definitions, we can measure it differently. In this section, we describe the principles and history of how we traditionally have measured microbial diversity.</p>
+<div class="section" id="the-darwinian-tree-of-life-tol">
+<h3>1.4.1 The Darwinian Tree of Life (TOL)<a class="headerlink" href="#the-darwinian-tree-of-life-tol" title="Permalink to this heading">#</a></h3>
+<p>Two kinds of prokaryotic life were discovered in the 1970s by biophysicist Carl Woese as part of his effort to construct a <strong>Darwinian Tree of Life (TOL)</strong> to show the evolutionary relationships between all forms of cellular life.</p>
+<p>In the Darwinian view, the history of life is like a tree with multiple branches arising from a common trunk all the way to the tips of the youngest twigs, symbolic of the present diversity of living organisms. On such a TOL, the branch points represent points of divergence or points at which diversity is generated from a common ancestor That is, at each fork of an evolutionary or <strong>phylogenetic tree</strong>, is an ancestor common to all the lines of descent branching from that fork. Two organisms considered closely-related to each other share a common ancestor that represents a relatively recent branch point on the TOL, but through an ancestor that lived much farther back in time, these organisms are also related to other organisms, that is, all of life is connected. The last common ancestor shared by all current life is referred to as “LUCA” (Fig 90).</p>
+<div class="figure align-default" id="fig90">
+<a class="reference internal image-reference" href="_images/1-41.png"><img alt="_images/1-41.png" src="_images/1-41.png" style="height: 250px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 90 </span><span class="caption-text">Woese’s version of the Darwinian tree of life.</span><a class="headerlink" href="#fig90" title="Permalink to this image">#</a></p>
+</div>
+</div>
+<div class="section" id="building-a-tree-of-life">
+<h3>1.4.2 Building a Tree of Life<a class="headerlink" href="#building-a-tree-of-life" title="Permalink to this heading">#</a></h3>
+<p>What a Darwinian TOL attempts do is make sense of the evolutionary origins of the current myriad diversity of life on Earth by connecting it through common ancestors. To construct such a tree, one needs to be able to compare extant organisms with respect to a characteristic that reflects their evolution. Organisms exhibit many characteristics but not all of them are useful in this regard.</p>
+<p>Obviously for any characteristic to be useful as an evolutionary indicator, the following has to be true: two closely-related organisms (two organisms recently sharing a common ancestor) have to be very similar with respect to the   structural characteristic while two distantly-related organisms (two organisms that long ago shared a common ancestor) have to be very different with respect to this very same characteristic. Beyond this obvious requirement, some other essential attributes of an evolutionary indicator/chronometer are:</p>
+<ol class="arabic simple">
+<li><p>The structure should be found in all forms of life. This is so that all organisms can be   compared to each other using the same structure.</p></li>
+<li><p>The structure should be able to accommodate variation over time without loss or change in function. Further, these variations should accumulate very slowly so that the structure retains traces of ancestral patterns over billions of years of evolution.</p></li>
+<li><p>Changes in the structural feature should be measurable.</p></li>
+</ol>
+<p>Woese reasoned that a good characteristic for tracing vertical evolutionary relationships might be the sequence of nucleotides in the RNA component of the small ribosomal subunit (SSU rRNA) (Fig 91). Although he did not know in the end whether his choice would be a good one, he did know the following:</p>
+<ul class="simple">
+<li><p>Because all organisms must synthesize proteins, ribosomes are found in all forms   of cellular life.</p></li>
+<li><p>The structure of SSU rRNA was already known to exhibit differences/variations between organisms without loss of ribosomal function. Further because SSU rRNA was only one component of the complex translational machinery of a cell, it had to interact with many other molecules involved in protein-synthesis and for this  reason there were expected to be significant constraints on its structure. In other words, SSU rRNA nucleotide sequences were expected to vary slowly over evolutionary time and for this reason they would retain traces of ancestral patterns from billions of years ago.</p></li>
+<li><p>Differences between the nucleotide sequences of different SSU rRNA molecules could be measured in order to construct a phylogenetic tree.</p></li>
+</ul>
+<div class="figure align-default" id="fig91">
+<a class="reference internal image-reference" href="_images/1-51.png"><img alt="_images/1-51.png" src="_images/1-51.png" style="height: 250px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 91 </span><span class="caption-text">Microbial ribosome showing SSU rRNA structure.</span><a class="headerlink" href="#fig91" title="Permalink to this image">#</a></p>
+</div>
+</div>
+<div class="section" id="the-woese-tree-of-life">
+<h3>1.4.3 The Woese Tree of Life<a class="headerlink" href="#the-woese-tree-of-life" title="Permalink to this heading">#</a></h3>
+<p>Using SSU rRNA as an evolutionary indicator/chronometer, Woese concluded the data was best represented as a TOL not with two major branches (one for eukaryotes and one for prokaryotes) but a tree with three major branches. That is, the “Woese Tree of Life” did not place all prokaryotes on a common branch but rather on two separate ones he ultimately called the Domains Bacteria and Archaea (Fig 90). And indeed, subsequent studies showed that although both Bacteria and Archaea were prokaryotic and often looked the same under the microscope, they nevertheless showed significant differences at the molecular level including the molecular details of their cellular processes.</p>
+<div class="margin sidebar">
+<p class="sidebar-title">Archaea</p>
+<p>Looking at the Woese TOL in Fig 90, notice that the Archaeal domain is more closely related to the Eukarya. Interestingly, even though it is difficult to distinguish between archael and bacterial cells at a physical, structural level, archaeal cells are more molecularly similar to eukaryal cells.</p>
+</div>
+</div>
+<div class="section" id="determining-the-composition-of-the-microbiota">
+<h3>1.4.4 Determining the composition of the Microbiota<a class="headerlink" href="#determining-the-composition-of-the-microbiota" title="Permalink to this heading">#</a></h3>
+<p>Using the same principles defined by Woese, researchers use the 16S rRNA gene sequence as a way to measure microbial diversity. This is the current standard for bacterial identification as the 16S rRNA gene remains distinct between bacterial species, a feature aided by a slow rate of evolutionary change (5). This standard is slowly changing towards sequencing the whole genome as a means to measure diversity but this new technique is beyond the scope of MICB 211.
+As mentioned in the beginning of this section, there are different ways to define microbial diversity and they depend on what parameters you measure. Diversity can be a measure of:</p>
+<ul class="simple">
+<li><p><strong>Richness</strong>: the absolute number of different species in the community.</p></li>
+<li><p><strong>Abundance and Evenness</strong>: the relative prevalence of that species in the community compared to other species. The more proportional the distribution, the more even the community is as well.</p></li>
+<li><p><strong>Phylogenetic distance</strong>: how closely related the species are to each other on a phylogenetic tree.</p></li>
+</ul>
+<p>Ultimately, we follow the following principle: <em>The higher the richness, evenness, and phylogenetic distance, the more diverse the community.</em></p>
+<p>Different definitions of microbial diversity take in consideration different parameters (eg. some ignore evenness, some only consider richness) which may define the diversity of a community quite differently.</p>
+<p>For example, let’s consider the 2 different microbial community illustrated in Fig 92:</p>
+<div class="figure align-default" id="fig92">
+<img alt="_images/1-61.png" src="_images/1-61.png" />
+<p class="caption"><span class="caption-number">Fig. 92 </span><span class="caption-text">Two different microbial communities where the colors represent different species.</span><a class="headerlink" href="#fig92" title="Permalink to this image">#</a></p>
+</div>
+<ol class="arabic simple">
+<li><p>Try to figure what the richness of each community is by counting the number of different species.</p></li>
+<li><p>What is the relative abundance of each species within each community? Count the number of cells per species and determine their relative distribution in the population (ie. what percentage of the population do they make up?)</p></li>
+<li><p>Assume that the different shapes and number of flagella represent very phylogenetically distant species. Count the number of features that you have in each community.</p></li>
+</ol>
+<p>Which community would you consider to be the most diversity if you only based it on:</p>
+<ul class="simple">
+<li><p>Richness?</p></li>
+<li><p>Richness and evenness?</p></li>
+<li><p>Richness and phylogenetic distance?</p></li>
+<li><p>All parameters?</p></li>
+</ul>
+<p>Bring your responses to class.</p>
+</div>
+</div>
+<div class="section" id="case-study-investigating-the-effects-of-maternal-age-on-the-infant-microbiome">
+<h2>Case Study: Investigating the effects of maternal age on the infant microbiome<a class="headerlink" href="#case-study-investigating-the-effects-of-maternal-age-on-the-infant-microbiome" title="Permalink to this heading">#</a></h2>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">This case study was adapted from: <strong>Haroon et al, 2022</strong></p>
+<p class="sd-card-text">Haroon N, Anwari A, Malhi J. 2022. Maternal age is correlated with decreased infant gut microbial diversity and changes in eating behaviour. UJEMI+ 8:1-12</p>
+</div>
+</div>
+</div>
+<p><strong>Overview</strong>
+This is a paper from MICB 447 in which students investigated the effect of maternal age on infant microbiome diversity, using a study performed by Dr. Kyung Rhee at UC San Diego. The data was processed to calculate diversity in mothers’ and their infants’ microbiota.</p>
+<p><strong>Step 1: Microbial diversity of mothers</strong>
+The microbial diversity (Faith’s Phylogenetic diversity index) of mothers aged 30 and above versus those below the age of 30 were compared, producing the figure below.</p>
+<div class="figure align-default" id="fig93">
+<img alt="_images/1-71.png" src="_images/1-71.png" />
+<p class="caption"><span class="caption-number">Fig. 93 </span><span class="caption-text">Comparing microbial diversity of mothers aged 30 and above to mother below the age of 30 (n = 74). Statistical significance is denoted by an asterisk (*). Faith’s Phylogenetic distance takes in consideration richness and phylogenetic relatedness. The higher the index number, the higher the microbial diversity.</span><a class="headerlink" href="#fig93" title="Permalink to this image">#</a></p>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Questions to consider:</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Which maternal age group has a higher microbial diversity?</p></li>
+<li><p class="sd-card-text">Based on this data, which group of infants would you hypothesize to have a higher microbial diversity – those born to mothers below or above the age of 30? What assumption(s) are you making with this hypothesis?</p></li>
+</ol>
+</div>
+</div>
+</div>
+<p><strong>Step 2: Application to infant gut microbiome data</strong></p>
+<div class="figure align-default" id="fig94">
+<img alt="_images/1-81.png" src="_images/1-81.png" />
+<p class="caption"><span class="caption-number">Fig. 94 </span><span class="caption-text">(abbreviated). Comparing microbial diversity of infants with mothers aged 30 and above to infants with mother below the age of 30 at 2 weeks (n = 54). Results are shown for infants aged 2 weeks (A) and aged 2 months (E). Examination of the taxonomic groups identified in infant microbiomes produced a Venn diagram (G), showing the number of taxonomic groups that are unique to infants with mothers aged 30 and above (n = 90) compared to infants with mothers below the age of 30 (n =84) as well as taxonomic groups that are similar to both groups (n = 127).</span><a class="headerlink" href="#fig94" title="Permalink to this image">#</a></p>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Questions to consider:</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">How does the microbiome diversity of infants born to different age groups differ at 2 weeks? What about at 2 months?</p></li>
+<li><p class="sd-card-text">Does this fit your hypothesis made in the previous set of questions?</p></li>
+<li><p class="sd-card-text">Look at the Venn diagram in Fig 94. What component of biodiversity does this show?</p></li>
+<li><p class="sd-card-text">Does the number of unique taxonomic groups within the two infant categories surprise you in comparison to the data in Fig 94A and Fig 94E? How might the differences be explained or further understood?</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="references">
+<h2>References:<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Strelkauskas, A. &amp; Strelkauskas, J. Microbiology: A Clinical Approach. (Garland Science, 2010).</p></li>
+<li><p>Sender, R., Fuchs, S. &amp; Milo, R. Revised Estimates for the Number of Human and Bacteria Cells in the Body. PLoS Biol 14, e1002533 (2016).</p></li>
+<li><p>Skowron, K. et al. Human Skin Microbiome: Impact of Intrinsic and Extrinsic Factors on Skin Microbiota. Microorganisms 9, 543 (2021).</p></li>
+<li><p>Heijtz, R. D. et al. Normal gut microbiota modulates brain development and behavior. Proceedings of the National Academy of Sciences 108, 3047–3052 (2011).</p></li>
+<li><p>Stavrinides, J. &amp; Ochman, H. Phylogenetic Methods. in Encyclopedia of Microbiology (Third Edition) (ed. Schaechter, M.) 247–260 (Academic Press, 2009). doi:10.1016/B978-012373944-5.00272-8.</p></li>
+<li><p>Michail, S. et al. Alterations in the gut microbiome of children with severe ulcerative colitis. Inflamm Bowel Dis 18, 1799–1808 (2012).</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="unit1-chap5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Chapter 5: Sensing and Responding to the Environment</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="unit2-chap2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 2: Community Lifestyle of a Biofilm</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-the-human-microbiome">1.1 Overview of the Human Microbiome</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-microbiota">1.1.1 What is the Microbiota</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#host-and-microbiota-interactions">1.1.2 Host and Microbiota Interactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chronology-and-source-of-microbiota-for-humans">1.1.3 Chronology and Source of Microbiota for Humans</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-that-affect-the-composition-of-the-microbiota">1.1.4 Factors that affect the composition of the microbiota</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#physiological-niches-of-the-human-microbiome">1.2 Physiological Niches of the Human Microbiome</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#location-of-the-microbiota">1.2.1 Location of the microbiota</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microbiota-of-the-skin">1.2.2 Microbiota of the Skin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microbiota-of-the-oral-cavity">1.2.3 Microbiota of the Oral Cavity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microbiota-of-the-gastrointestinal-tract">1.2.4 Microbiota of the Gastrointestinal Tract</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microbiota-of-the-respiratory-tract">1.2.5 Microbiota of the Respiratory Tract</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microbiota-of-the-urogenital-tract">1.2.6 Microbiota of the Urogenital Tract</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#essentiality-of-the-microbiota">1.3 Essentiality of the Microbiota</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#studying-the-microbiota">1.4 Studying the Microbiota</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-darwinian-tree-of-life-tol">1.4.1 The Darwinian Tree of Life (TOL)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-tree-of-life">1.4.2 Building a Tree of Life</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-woese-tree-of-life">1.4.3 The Woese Tree of Life</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determining-the-composition-of-the-microbiota">1.4.4 Determining the composition of the Microbiota</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-investigating-the-effects-of-maternal-age-on-the-infant-microbiome">Case Study: Investigating the effects of maternal age on the infant microbiome</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By MICB 211 Teaching Team led by Evelyn Sun
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
