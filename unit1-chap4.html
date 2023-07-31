@@ -1,0 +1,932 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 4: Gene Expression and Regulation &#8212; MICB 211 Foundations in Microbiology eTextbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unit1-chap4';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Chapter 5: Sensing and Responding to the Environment" href="unit1-chap5.html" />
+    <link rel="prev" title="Chapter 3: Microbial Growth in the Lab and in Nature" href="unit1-chap3.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    MICB 211 E-Textbook Acknowledgements
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unit 1</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap1.html">Chapter 1: Introduction to Microbiology and Data Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap2.html">Chapter 2: Microbial Cell Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap3.html">Chapter 3: Microbial Growth in the Lab and in Nature</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 4: Gene Expression and Regulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap5.html">Chapter 5: Sensing and Responding to the Environment</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unit 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit2-chap1.html">Unit 2: Chapter 1</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Funit1-chap4.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/unit1-chap4.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 4: Gene Expression and Regulation</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#genetic-organization">4.1 Genetic Organization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#genotype-and-phenotype">4.1.1 Genotype and Phenotype</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gene-structure">4.2 Gene Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-genes">4.2.1 Individual Genes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operons">4.2.2 Operons</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gene-expression">4.3 Gene Expression</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transcription">4.3.1 Transcription</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#translation">4.3.2 Translation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regulating-gene-expression">4.4 Regulating Gene Expression</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#promoter-strength">4.4.1 Promoter Strength</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regulatory-proteins">4.4.2 Regulatory Proteins</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mrna-degradation">4.4.3 mRNA Degradation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protein-degradation">4.4.4 Protein Degradation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-glucose-lactose-diauxie">Case Study: Glucose-lactose Diauxie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-gene-transfer-hgt">4.5 Horizontal Gene Transfer (HGT)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformation">4.5.1 Transformation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transduction">4.5.2 Transduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conjugation">4.5.3 Conjugation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fate-of-hgt-dna">4.5.4 Fate of HGT DNA</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-transferring-toxins-through-transduction">Case Study: Transferring toxins through transduction</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-4-gene-expression-and-regulation">
+<h1>Chapter 4: Gene Expression and Regulation<a class="headerlink" href="#chapter-4-gene-expression-and-regulation" title="Permalink to this heading">#</a></h1>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Learning Objectives</strong></p>
+<p class="sd-card-text">By the end of this chapter, students will be expected to:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">identify components of a prokaryotic gene and operon</p></li>
+<li><p class="sd-card-text">describe different ways that bacteria regulate gene expression at different levels of the Central Dogma</p></li>
+<li><p class="sd-card-text">predict how a gene may be regulated based on its structure and function</p></li>
+<li><p class="sd-card-text">predict the expression levels of the lac operon depending on the available substrate</p></li>
+<li><p class="sd-card-text">differentiate between vertical and horizontal gene transfer (HGT)</p></li>
+<li><p class="sd-card-text">describe each of the different types of HGT</p></li>
+<li><p class="sd-card-text">interpret and analyze data on the study of prokaryotic gene expression and HGT</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="genetic-organization">
+<h2>4.1 Genetic Organization<a class="headerlink" href="#genetic-organization" title="Permalink to this heading">#</a></h2>
+<div class="section" id="genotype-and-phenotype">
+<h3>4.1.1 Genotype and Phenotype<a class="headerlink" href="#genotype-and-phenotype" title="Permalink to this heading">#</a></h3>
+<p>The physical features and functional traits of an organism (its characteristics or <strong>phenotype</strong>) are a reflection of the proteins it possesses at any point in time. Indeed, almost every cellular process relies on the action/function of a particular protein or set of proteins. Proteins can be grouped into functional categories (Fig 56).</p>
+<p><strong>Genotype</strong> refers to the particular set of genes an organism possesses. A gene is the unit of genetic information, more concretely a segment of DNA that possesses the information specifying the order (= sequence) of amino acids in a polypeptide molecule or the sequence of nucleotides in a stable RNA molecule = transfer RNA (tRNA) or ribosomal RNA (rRNA). Remember that not all genes specify polypeptides. Some genes specify rRNA or tRNA as their final gene products.</p>
+<div class="figure align-default" id="fig56">
+<a class="reference internal image-reference" href="_images/4-1.png"><img alt="_images/4-1.png" src="_images/4-1.png" style="height: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 56 </span><span class="caption-text">Functional categories of proteins expressed in bacteria.</span><a class="headerlink" href="#fig56" title="Permalink to this image">#</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Gene and protein names</strong></p>
+<p>Prokaryotic genes are specified by a descriptive three letter designation (small letters, italicized or underlined) usually followed by an italicized or underlined capital letter; related genes are often given the same three letter designation followed by a different capital letter (Example: <em>rpsL</em>).
+Prokaryotic proteins are given the same designation as genes except the first letter is capitalized and the designation is not written in italics or underlined (Example: RpsL). There are no “rules” for what genes/proteins can be called. This means it can be difficult to discern the function of a gene/protein from its designation. As far as eukaryotic genes and proteins go, there are different systems for different organisms.</p>
+</div>
+<p>An organism’s genotype resides in its <strong>genome</strong>. The term genome refers to the total physical DNA that specifies an organism’s characteristics, that is, all of its genetic material. It is composed of the DNA making-up an organism’s genes and the DNA between its genes. Genomics is the study and analysis of genomes. Proteome refers to all of the different proteins that can be synthesized by an organism. Proteomics is the study and analysis of proteomes. Bacterial genomes typically constitute its <strong>chromosome</strong> and <strong>plasmids</strong>.</p>
+<p><strong>Chromosome</strong></p>
+<p>In eukaryotes, chromosomal DNA is generally linear and organellar DNA is generally circular. In prokaryotes, with few exceptions, all genome components are circular DNA molecules. The significance (if any) of linear chromosomes and plasmids in the few prokaryotes that possess them is not clear.</p>
+<p>In most Bacteria, chromosomal DNA replication is initiated by proteins which bind at a specific nucleotide sequence called the origin of replication, <em>oriC</em> (Fig 57). DNA synthesis then proceeds in both directions (<strong>bidirectionally</strong>) around the chromosome to a termination region opposite <em>oriC</em> on the chromosome.</p>
+<p>All prokaryotic genomes must have the same general classes of chromosomal genes, eg. genes encoding structural proteins, enzymes, transport proteins, DNA replication proteins, proteins for transcription and translation, regulatory DNA binding proteins as well as genes encoding tRNAs and rRNAs (Fig 56). different organisms have different mixes of genes within these classes (genotype) that endows them with particular characteristics and abilities (phenotype) linked to the microenvironments they have adapted to.</p>
+<div class="figure align-default" id="fig57">
+<img alt="_images/4-2.png" src="_images/4-2.png" />
+<p class="caption"><span class="caption-number">Fig. 57 </span><span class="caption-text">Overview of semi-conservative, theta, bidirectional chromosome and plasmid replication in Bacteria.</span><a class="headerlink" href="#fig57" title="Permalink to this image">#</a></p>
+</div>
+<p><strong>Plasmids</strong></p>
+<p>Interestingly, Bacteria contain genes outside of their chromosome. If you rupture a Bacterial cell, you will often find small circular pieces of DNA called plasmids (Fig 58). Most plasmids are not essential for the viability of their host under all environmental conditions but can augment a prokaryote’s ability to survive in certain circumstances. Indeed, plasmids are often grouped according to the genes that they carry and thus the characteristics they give the host organism in which they exist. Prokaryotic cells can host single or multiple copies of different plasmids at the same time. Some examples of different kinds of plasmids are given below.</p>
+<ul class="simple">
+<li><p>Resistance plasmids carry genes specifying proteins that confer resistance to antibiotics and other toxic chemicals like heavy metals.</p></li>
+<li><p>Nutrition plasmids carry genes which specify enzymes that allow organisms to use certain molecules as nutrients. These molecules are sometimes unusual chemicals in the environment (eg. petroleum, pesticides, PCBs) that are not essential for survival.</p></li>
+<li><p>Infection plasmids carry genes which specify proteins that are required for the establishment of infections in animals and plants.</p></li>
+<li><p>Symbiosis plasmids carry genes which specify proteins that are required for the establishment of symbiotic relationships with plants and animals.</p></li>
+</ul>
+<div class="figure align-default" id="fig58">
+<a class="reference internal image-reference" href="_images/4-3.png"><img alt="_images/4-3.png" src="_images/4-3.png" style="height: 250px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 58 </span><span class="caption-text">Ruptured bacterial cell reveals chromosomal and plasmid DNA.</span><a class="headerlink" href="#fig58" title="Permalink to this image">#</a></p>
+</div>
+<p>Plasmids are normally acquired through <strong>horizontal gene transfer</strong> (Section 4.5) which, in short, means that they can be acquired by a cell without it needing to divide (ie. reproduce) so the genotype of an existing cell can change without it needing to reproduce!</p>
+<p>Many plasmids are replicated like the chromosome, beginning at an origin of replication with a specific nucleotide sequence termed <em>oriV</em> (Fig 57) followed by bidirectional complementary DNA synthesis around the double-stranded DNA (dsDNA) circle. This kind of replication is called theta bidirectional because the replicating chromosome/plasmid looks like the greek letter “theta”.</p>
+</div>
+</div>
+<div class="section" id="gene-structure">
+<h2>4.2 Gene Structure<a class="headerlink" href="#gene-structure" title="Permalink to this heading">#</a></h2>
+<div class="section" id="individual-genes">
+<h3>4.2.1 Individual Genes<a class="headerlink" href="#individual-genes" title="Permalink to this heading">#</a></h3>
+<p>Most prokaryotic genes are protein-encoding, that is, they specify a polypeptide rather than a stable RNA. A typical bacterial gene consists of (Fig 59):</p>
+<ul class="simple">
+<li><p>a <strong>promoter</strong> region where the RNA polymerase binds during transcription.</p></li>
+<li><p>an <strong>operator</strong> region where a regulatory protein can bind. Depending on the type of regulation, it can either promote or inhibit transcription. This is discussed in more depth in Section 4.4.</p></li>
+<li><p>the <strong>coding region</strong> which contains the template for the mRNA.</p></li>
+<li><p>and a <strong>terminator</strong> where the RNA polymerase falls off the DNA to end transcription.</p></li>
+</ul>
+<div class="figure align-default" id="fig59">
+<img alt="_images/4-4.png" src="_images/4-4.png" />
+<p class="caption"><span class="caption-number">Fig. 59 </span><span class="caption-text">Prokaryotic gene and operon structure.</span><a class="headerlink" href="#fig59" title="Permalink to this image">#</a></p>
+</div>
+</div>
+<div class="section" id="operons">
+<h3>4.2.2 Operons<a class="headerlink" href="#operons" title="Permalink to this heading">#</a></h3>
+<p>Besides individual genes, prokaryotic cells have also evolved to have <strong>operons</strong>, multiple genes under the control of a single promoter. In prokaryotes, it is common to find genes clustered together in the genome if they specify proteins that are involved in the same cellular process (Fig 60). Such gene clusters are called operons. The genes of operons are transcribed together as a single mRNA initiating at one promoter, but two or more different proteins with different amino acid sequences are translated from the single mRNA (Fig 59).</p>
+<div class="figure align-default" id="fig60">
+<a class="reference internal image-reference" href="_images/4-5.png"><img alt="_images/4-5.png" src="_images/4-5.png" style="height: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 60 </span><span class="caption-text">Prokaryotic gene and operon structure.</span><a class="headerlink" href="#fig60" title="Permalink to this image">#</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="gene-expression">
+<h2>4.3 Gene Expression<a class="headerlink" href="#gene-expression" title="Permalink to this heading">#</a></h2>
+<div class="section" id="transcription">
+<h3>4.3.1 Transcription<a class="headerlink" href="#transcription" title="Permalink to this heading">#</a></h3>
+<p><strong>Initiation</strong></p>
+<p>In Bacteria, transcription begins at a promoter, a region of dsDNA about 50 bp (base pairs) in size. Promoters have specific nucleotide sequences which RNA polymerase recognizes to initiate transcription.</p>
+<p>Bacteria have a single RNA polymerase. It exists in two forms: the <strong>holoenzyme and the core enzyme</strong>. The core enzyme has four subunits: two “alpha” subunits and two   very similar “beta” subunits (beta and beta-prime). In order to recognize and bind to a promoter sequence, the core enzyme must associate with a 5th protein called the sigma factor to form the holoenzyme (Fig 61). It is the sigma subunit that confers the ability to recognize a promoter sequence. In transcription initiation, RNA polymerase binds nonspecifically to DNA and then slides along it scanning for a promoter sequence. When one is detected, the polymerase stops, transcription is initiated, and the sigma subunit dissociates. There are several different sigma subunits in Bacteria, each with a different sequence specificity for promoter recognition. This allows Bacteria to regulate the transcription of entire categories of genes by controlling whether particular sigma factors are made.</p>
+<div class="figure align-default" id="fig61">
+<a class="reference internal image-reference" href="_images/4-6.png"><img alt="_images/4-6.png" src="_images/4-6.png" style="height: 250px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 61 </span><span class="caption-text">Bacterial RNA polymerase consisting of the holoenzyme and sigma factor.</span><a class="headerlink" href="#fig61" title="Permalink to this image">#</a></p>
+</div>
+<p><strong>Elongation</strong></p>
+<p>Following the promoter is the coding region which acts as the template for the mRNA. After RNA polymerase binding to the promoter, RNA polymerase separates the DNA strands to gain access to the nucleotides of the template strand. The enzyme then moves along this DNA strand in the 3’ to 5’ direction synthesizing mRNA in the 5’ to 3’ direction using the nucleotide sequence of the template strand as guide for choosing the complementary nucleotides to link together. The first nucleotide copied into mRNA (the “+1 site”) occurs a few nucleotides “downstream” of the promoter.</p>
+<p><strong>Termination</strong></p>
+<p>There are at least two ways that transcription is terminated in Bacteria. These mechanisms are called intrinsic and factor dependent termination and are distinguished on the basis of whether protein factors are involved in termination. MICB 211 does not consider factor dependent termination. In intrinsic transcription termination, RNA polymerase falls off the template strand when it pauses over a stretch of weakly H-bonded A-U nucleotide pairs (Adenine in the template DNA and Uracil in the mRNA). RNA polymerase pausing is associated with the formation of a stem-loop structure in the mRNA that interacts with enzyme. This stem-loop structure is called an intrinsic transcription terminator.</p>
+</div>
+<div class="section" id="translation">
+<h3>4.3.2 Translation<a class="headerlink" href="#translation" title="Permalink to this heading">#</a></h3>
+<p><strong>Initiation</strong></p>
+<p>The nucleotide sequence of mRNA is used by ribosomes as a guide to link amino acids together in a particular sequence resulting in a unique polypeptide. To begin translation, ribosomes specifically bind to the mRNA at a nucleotide sequence called the <strong>ribosome binding site (rbs)</strong>. Ribosome binding sites can vary somewhat in sequence depending on the gene but all are about 5 nucleotides in length.</p>
+<p><strong>Elongation</strong></p>
+<p>After binding to the mRNA at the rbs, with the participation of tRNA, ribosomes move along mRNA in the 5’ to 3’ direction joining amino acids together via peptide linkages in the sequence specified by the nucleotide sequence in the mRNA (Fig 62). Several ribosomes can sequentially bind to and simultaneously translate the same mRNA, and translation can start even before mRNA synthesis is finished (Fig 63). During translation, the nucleotides are “read” by the ribosomes and tRNA in groups of three called <strong>codons</strong>. Codons specify the amino acids (AA) according to the genetic code.</p>
+<div class="figure align-default" id="fig62">
+<a class="reference internal image-reference" href="_images/4-7.png"><img alt="_images/4-7.png" src="_images/4-7.png" style="height: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 62 </span><span class="caption-text">Process of translation.</span><a class="headerlink" href="#fig62" title="Permalink to this image">#</a></p>
+</div>
+<div class="figure align-default" id="fig63">
+<a class="reference internal image-reference" href="_images/4-8.png"><img alt="_images/4-8.png" src="_images/4-8.png" style="height: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 63 </span><span class="caption-text">Multiple ribosomes bound to one mRNA molecule.</span><a class="headerlink" href="#fig63" title="Permalink to this image">#</a></p>
+</div>
+<p><strong>Termination</strong></p>
+<p>Polypeptides are synthesized from the N-terminus (first) to the C-terminus (last) so the 5’ end of the mRNA coding region corresponds to the N-terminus of the polypeptide and the 3’ end of the mRNA coding region corresponds to the C-terminus. When a ribosome encounters a stop or termination codon (UGA, UAA or UAG), translation terminates and the polypeptide is complete.</p>
+</div>
+</div>
+<div class="section" id="regulating-gene-expression">
+<h2>4.4 Regulating Gene Expression<a class="headerlink" href="#regulating-gene-expression" title="Permalink to this heading">#</a></h2>
+<p>Proteins are expensive to make. Indeed, because the formation of each peptide linkage consumes 5 ATP (biological unit of energy) and proteins have hundreds of amino acids, translation of a single protein requires thousands of ATP molecules. In a world where nutrients are not always plentiful, it is not a good competitive strategy to make a protein or too much of a specific protein if it is not needed. This is a waste of nutritional resources.</p>
+<p>Regulating gene expression means controlling when, where and how much of a particular gene product (usually a protein) is made. In this context, there are basically 4 types of gene expression; they are not necessarily mutually exclusive.</p>
+<ul class="simple">
+<li><p><strong>Constitutive (house-keeping) gene expression</strong>: Some genes are expressed all the time because the product of the gene is required for a basic cellular function that is needed all the time.</p></li>
+<li><p><strong>Developmentally-regulated gene expression</strong>: As part of a developmental genetic program, some genes must be expressed at different phases of a process or growth so that different proteins are made at different times. See example on endospore formation (Unit 1 Chap 3).</p></li>
+<li><p><strong>Cell-specific gene expression</strong>: All cells that make-up a prokaryotic organism contain the same genetic information. Some genes are expressed only in certain cell types.</p></li>
+<li><p><strong>Environmentally-regulated gene expression</strong>: Some genes are expressed only under certain environmental conditions.</p></li>
+</ul>
+<p>This course will cover 4 ways that Bacteria control gene expression:</p>
+<ul class="simple">
+<li><p>Promoter strength</p></li>
+<li><p>Regulatory proteins</p></li>
+<li><p>mRNA degradation</p></li>
+<li><p>Protein degradation</p></li>
+</ul>
+<p>The mechanisms we cover in this course align with regulating gene expression at different stages of the Central Dogma of Biology (Fig 64).</p>
+<div class="figure align-default" id="fig64">
+<img alt="_images/4-9.png" src="_images/4-9.png" />
+<p class="caption"><span class="caption-number">Fig. 64 </span><span class="caption-text">Levels of gene regulation along the central dogma of biology.</span><a class="headerlink" href="#fig64" title="Permalink to this image">#</a></p>
+</div>
+<div class="section" id="promoter-strength">
+<h3>4.4.1 Promoter Strength<a class="headerlink" href="#promoter-strength" title="Permalink to this heading">#</a></h3>
+<p><strong>Promoter strength</strong> refers to the frequency in which RNA polymerase initiates transcription. At strong promoters, transcription is initiated more frequently than at weak promoters.</p>
+<p>In order to understand this, one has to appreciate that RNA polymerase binding to a promoter is not an “all-or-nothing” event. Although the enzyme binds to the promoter, it is also released. In other words, a dynamic binding equilibrium exists between the two states.</p>
+<p>Although for a particular sigma subunit, all promoters have similar nucleotide sequences, they do exhibit some variation. This results in different RNA polymerase binding characteristics. At strong promoters, RNA polymerase spends more time bound to the DNA ( =higher <strong>binding affinity</strong>) than at weak promoters (=lower binding affinity) (Fig 65). The more time RNA polymerase spends bound to the DNA, the greater the likelihood that transcription will be initiated, the gene will be transcribed and the encoded polypeptide will be synthesized. That is, at strong promoters, transcription is initiated more frequently than at weak promoters, which results in more copies of mRNA per unit time and for this reason more polypeptide copies per unit time.</p>
+<div class="figure align-default" id="fig65">
+<a class="reference internal image-reference" href="_images/4-10.png"><img alt="_images/4-10.png" src="_images/4-10.png" style="height: 200px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 65 </span><span class="caption-text">Promoter strength based on sequence variation.</span><a class="headerlink" href="#fig65" title="Permalink to this image">#</a></p>
+</div>
+</div>
+<div class="section" id="regulatory-proteins">
+<h3>4.4.2 Regulatory Proteins<a class="headerlink" href="#regulatory-proteins" title="Permalink to this heading">#</a></h3>
+<p>Another way that microbes regulate gene expression at the DNA level is through the use of regulatory proteins. Regulatory proteins or <strong>transcriptional regulators</strong> are proteins that can actively bind to the operator region of the promoter and either inhibit RNA polymerase or recruit RNA polymerase depending on whether it is a <strong>repressor or enhancer</strong> of transcription respectively.</p>
+<p>Let’s explore the <em>lac</em> operon, for example. The lac operon contains genes that express enzymes involved in lactose metabolism. This means that the cell would only want to express these proteins when there is lactose, which the substrate, in the system. It would be wasteful for the cell to express these proteins when there is no lactose to metabolized. Therefore, the lactose molecules themselves help regulate when the lac operon is expressed or not. Upstream of the lac operon is the lacI gene which encodes for the transcriptional regulator, LacI. LacI is a transcriptional repressor which means that it binds to the operator region which is upstream of where the RNA polymerase and the sigma factor bind on the promoter, and it physically blocks the RNA polymerase from transcribing the lac operon.</p>
+<p>In the absence of lactose, LacI is bound to the operator preventing expression of the lac operon (Fig 66).</p>
+<div class="figure align-default" id="fig66">
+<a class="reference internal image-reference" href="_images/4-11.png"><img alt="_images/4-11.png" src="_images/4-11.png" style="height: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 66 </span><span class="caption-text">Negative regulation of lac operon by LacI repressor in the presence and absence of lactose</span><a class="headerlink" href="#fig66" title="Permalink to this image">#</a></p>
+</div>
+<p>In the presence of lactose, the lactose molecule binds to the LacI regulator changing its conformation so that it cannot bind to DNA, this releases its repression on the lac operon promoter and allows RNA polymerase to transcript the lac operon genes and therefore express the lac operon enzymes (Fig 66).</p>
+<p>Let’s consider an extra layer of complication. Recall from Unit 1 Chap 3 that bacteria can selectively consume a substrate (ie. a sugar) that is preferred. Once they consume it, they subsequently begin to use a secondary, less preferred substrate. This results in diauxic (a growth curve with two exponential phases).</p>
+<p>In the context of the lac operon, consider that glucose which is often the preferred carbon source for most bacterial species is also present in the environment. The bacteria would not want to metabolize lactose as long as glucose is present and, therefore, the presence of glucose would affect the expression of the lac operon. From Fig 65, we can see that the lac operon is negatively regulated by the inhibitor, LacI, which is regulated by the presence or absence of lactose.</p>
+<p>Let’s look at Fig 67 now. Upstream of the lac promoter is another binding site called the CAP site. This is essentially another operator region bound by a secondary transcriptional regulator called CAP. CAP is regulated by a secondary metabolite: a small molecule called cAMP. The amount of cAMP produced is the cell is inversely related to the amount of glucose in the environment (i.e. more glucose equals less cAMP in the cell). cAMP binds to CAP allosterically changing its conformation so that it can actively bind DNA, specifically to the CAP site. CAP is an enhancer which recruits RNA polymerase to the promoter. Therefore, when CAP is bound, it promotes expression of the lac operon. But, we can’t forget that LacI exists too, so collectively these two systems regulate the lac operon based on lactose AND glucose levels. Consider Figures 66 and 67 and try to predict what the operon would look like if there was both lactose and glucose, only one of the sugars, or if both were absent.</p>
+<div class="figure align-default" id="fig67">
+<a class="reference internal image-reference" href="_images/4-12.png"><img alt="_images/4-12.png" src="_images/4-12.png" style="height: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 67 </span><span class="caption-text">Positive regulation of the lac operon with the enhancer, CAP, based on the levels of glucose.</span><a class="headerlink" href="#fig67" title="Permalink to this image">#</a></p>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Regulatory   protein</p></th>
+<th class="head"><p>Operon   binding site</p></th>
+<th class="head"><p>Relationship   to environment</p></th>
+<th class="head"><p>Overall   outcome</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LacI</p></td>
+<td><p>Lac promoter</p></td>
+<td><p>Lactose binds LacI and inhibits its   repression effect</p></td>
+<td><p>High lactose   –&gt; no lac operon repression</p></td>
+</tr>
+<tr class="row-odd"><td><p>CAP</p></td>
+<td><p>CAP site</p></td>
+<td><p>Glucose   downregulates cAMP, cAMP binds CAP and increases its repression effect</p></td>
+<td><p>High glucose   –&gt; lac operon repression</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mrna-degradation">
+<h3>4.4.3 mRNA Degradation<a class="headerlink" href="#mrna-degradation" title="Permalink to this heading">#</a></h3>
+<p>Another factor that impacts polypeptide copy number concerns how fast mRNA is degraded in a cell. Unlike stable RNA (rRNA and tRNA), mRNA is subject to enzymatic degradation by ribonuclease enzymes (RNases) as soon as it is made. This is why mRNA is called unstable RNA.</p>
+<p>Different mRNAs have different half-lives in prokaryotic cells. Some have half-lives of about a minute while others have a half-lives of nearly an hour. Obviously the longer a mRNA lasts in a cell, the more polypeptide copies that can be translated from it; only a few copies of a polypeptide may be translated from a short-lived mRNA whereas 100s of copies of a polypeptide may be translated from a long-lived mRNA.</p>
+</div>
+<div class="section" id="protein-degradation">
+<h3>4.4.4 Protein Degradation<a class="headerlink" href="#protein-degradation" title="Permalink to this heading">#</a></h3>
+<p>One of the most costly means of regulating gene expression in the cell is to directly degrade any proteins that the cell does not need. This process is the most costly because the cell has already spent the resources necessary to express and produce the protein. Proteins meant for degradation are normally tagged and sent to a large protease complex to be recycled back into their peptide or amino acid forms.</p>
+</div>
+</div>
+<div class="section" id="case-study-glucose-lactose-diauxie">
+<h2>Case Study: Glucose-lactose Diauxie<a class="headerlink" href="#case-study-glucose-lactose-diauxie" title="Permalink to this heading">#</a></h2>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">This case study was adapted from: <strong>Inada et al., 1996</strong></p>
+<p class="sd-card-text">Inada T, Kimata K, Aiba H. Mechanism responsible for glucose-lactose diauxie in <em>Escherichia coli</em>: challenge to the cAMP model. Genes to Cells: 1:293-301</p>
+</div>
+</div>
+</div>
+<p><strong>Overview</strong></p>
+<p>What we call scientific concepts are not perfect. As we continue to collect data, we often find ourselves refining or redefining these “concepts”. The lactose-glucose model of regulating expression of the lac operon is one of these concepts that have evolved over the years. In this paper, published in 1996, we want to explore what evidence they collected that defined an older model of how we believed the lac operon was regulated and compare it to how we know it works today. In this paper, Inada et al. are exploring how cAMP is potentially regulating the <em>lac</em> operon in different levels of lactose and glucose. We know how it works now but they didn’t quite define it yet in 1996. Let’s see if their data aligns with our modern model of this system.</p>
+<p><strong>Step 1: Testing different levels of glucose and lactose</strong></p>
+<div class="figure align-default" id="fig68">
+<a class="reference internal image-reference" href="_images/4-13.png"><img alt="_images/4-13.png" src="_images/4-13.png" style="height: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 68 </span><span class="caption-text">Beta-galactosidase levels as an indication of activation/expression of the <em>lac</em> operon and total cAMP levels under 4 conditions. Glycerol is a poor carbon source for <em>E. coli</em>.</span><a class="headerlink" href="#fig68" title="Permalink to this image">#</a></p>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Questions to consider:</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">What do you think is the purpose of the glycerol treatment?</p></li>
+<li><p class="sd-card-text">Considering what you know about the lac operon model today, what is unexpected in terms of the beta-galactosidase activity? Which treatments don’t meet the expected results?</p></li>
+<li><p class="sd-card-text">Considering what you know about the lac operon model today, what is unexpected in terms of the cAMP levels? Which treatments don’t meet the expected results?</p></li>
+<li><p class="sd-card-text">According to the data, what condition(s) trigger expression of the lac operon?</p></li>
+<li><p class="sd-card-text">According to the data, what condition(s) trigger increase in cAMP levels?</p></li>
+</ol>
+</div>
+</div>
+</div>
+<p><strong>Step 2: cAMP or no cAMP conditions</strong></p>
+<div class="figure align-default" id="fig69">
+<img alt="_images/4-14.png" src="_images/4-14.png" />
+<p class="caption"><span class="caption-number">Fig. 69 </span><span class="caption-text">Growth measured in OD600 and beta-galactosidase activity under a condition where cAMP is added to the media at high levels and a strain that in unable to produce cAMP.</span><a class="headerlink" href="#fig69" title="Permalink to this image">#</a></p>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Questions to consider:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Do the growth curves align to what you would have expected considering what you know about how the lac operon works today? What is different?</p></li>
+<li><p class="sd-card-text">Does the beta-galactosidase activity align to what you would have expected considering what you know about how the <em>lac</em> operon works today? Why or why not?</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="horizontal-gene-transfer-hgt">
+<h2>4.5 Horizontal Gene Transfer (HGT)<a class="headerlink" href="#horizontal-gene-transfer-hgt" title="Permalink to this heading">#</a></h2>
+<p>An inherent feature of the Darwinian Tree of Life concept is the exclusivity of vertical descent, that is, offspring obtain genes from their parent(s). However, it has become clear that organisms can also obtain genes from nonparental sources as well. This is called <strong>horizontal gene transfer (HGT)</strong> to distinguish it from vertical descent = <strong>vertical gene transfer (VGT)</strong> (Fig 70). In HGT, the organism that donates DNA is the <strong>donor</strong> and the organism that receives the DNA is the <strong>recipient</strong>.</p>
+<div class="figure align-default" id="fig70">
+<a class="reference internal image-reference" href="_images/4-15.png"><img alt="_images/4-15.png" src="_images/4-15.png" style="height: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 70 </span><span class="caption-text">Horizontal versus vertical gene transfer.</span><a class="headerlink" href="#fig70" title="Permalink to this image">#</a></p>
+</div>
+<p>In this course, we will cover 3 mechanisms of HGT (Fig 71):</p>
+<ol class="arabic simple">
+<li><p>Transformation</p></li>
+<li><p>Transduction</p></li>
+<li><p>Conjugation</p></li>
+</ol>
+<div class="figure align-default" id="fig71">
+<a class="reference internal image-reference" href="_images/4-16.png"><img alt="_images/4-16.png" src="_images/4-16.png" style="height: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 71 </span><span class="caption-text">Different forms of HGT. Blue: donor cell; Red: recipient cell.</span><a class="headerlink" href="#fig71" title="Permalink to this image">#</a></p>
+</div>
+<div class="section" id="transformation">
+<h3>4.5.1 Transformation<a class="headerlink" href="#transformation" title="Permalink to this heading">#</a></h3>
+<p>The transport of “naked” donor DNA from the environment into a recipient is known as transformation. When Bacteria die, they can lyse, releasing their DNA and other cytoplasmic contents into the environment. Because the chromosome is very large and physically fragile, when it is released from dead cells, it breaks up into 100’s of linear pieces or fragments with an average length of about 20-100 kb. This means each “average” fragment carries about 20-100 “average” genes. These DNA fragments can be taken-up by other (recipient) cells.</p>
+<p>In order to transport DNA from the environment, Bacteria have to be in a specific physiological state called the <strong>competent state</strong>. In the competent state, proteins for the transport of DNA from the environment are synthesized. These proteins are designated in different ways in different Bacteria. In MICB 211, the proteins or the transport of DNA will be referred to as Com proteins (encoded by com genes) which is the common practice for bacteria with a Gram-positive cell wall. Some Bacteria always synthesize Com proteins and are always competent whereas others become competent as a result conditions in the environment such as nutrient limitation or other stresses such as exposure to damaging radiation or chemicals.</p>
+</div>
+<div class="section" id="transduction">
+<h3>4.5.2 Transduction<a class="headerlink" href="#transduction" title="Permalink to this heading">#</a></h3>
+<p>The transfer of DNA from a donor to a recipient mediated by a virus, specifically a <strong>bacteriophage</strong>, that can result in a change in the phenotype of the recipient is called transduction.</p>
+<p>Bacteriophage	Like other viruses, bacteriophage or “phage” are infectious particles of genetic material wrapped in a protein coat. Tailed dsDNA phage particles possess protein capsids sometimes called heads. They also possess a protein tail with protein tail fibres. Their coiled bodies are used like a syringe to inject their DNA into the bacterial host (Fig 72).</p>
+<div class="figure align-default" id="fig72">
+<a class="reference internal image-reference" href="_images/4-17.png"><img alt="_images/4-17.png" src="_images/4-17.png" style="height: 200px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 72 </span><span class="caption-text">Structure of a typical bacteriophage.</span><a class="headerlink" href="#fig72" title="Permalink to this image">#</a></p>
+</div>
+<p>Binding of a phage particle to the cell surface receptor initiates the infection process. In the case of a common type of bacteriophage called T4, the phage DNA is injected into the host cell cytoplasm and the remainder of the T4 phage particle remains on the cell surface (Fig 73).</p>
+<div class="figure align-default" id="fig73">
+<a class="reference internal image-reference" href="_images/4-18.png"><img alt="_images/4-18.png" src="_images/4-18.png" style="height: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 73 </span><span class="caption-text">T4 bacteriophage lytic and lysogenic lifecycles.</span><a class="headerlink" href="#fig73" title="Permalink to this image">#</a></p>
+</div>
+<p>Following the injection of phage DNA into the bacteria, depending on the conditions and type of phage, the bacteriophage can undergo two different lifecycles (Fig 73). In the lytic lifecycle, the phage forces the host to expresses its own viral proteins allowing for virus particles to assemble inside the host until it lyses the cell to release the newly formed particles into the environment. In the lysogenic lifecycle, it integrates its viral DNA into the host chromosome and stays in a dormant state until certain conditions trigger the lytic lifecycle.</p>
+<p>When the new phage particles are being packaged in the host, there is a chance that fragmented host, bacterial DNA is packaged into the phage head by mistake. This is where transduction can occur because this phage containing accidental bacterial DNA can go on and infect another bacterial cell and transfer that DNA to a new host. A phage particle containing only host DNA is referred to as a transducing phage.</p>
+<div class="figure align-default" id="fig74">
+<a class="reference internal image-reference" href="_images/4-19.png"><img alt="_images/4-19.png" src="_images/4-19.png" style="height: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 74 </span><span class="caption-text">Bacterial transduction mediated by bacteriophage.</span><a class="headerlink" href="#fig74" title="Permalink to this image">#</a></p>
+</div>
+</div>
+<div class="section" id="conjugation">
+<h3>4.5.3 Conjugation<a class="headerlink" href="#conjugation" title="Permalink to this heading">#</a></h3>
+<p>Conjugation refers to the transfer of a plasmid from one prokaryote to another by cell- to-cell contact. Like phage, plasmids are a kind of selfish genetic element that can “infect” host cells. Unlike phage however, plasmids exist only inside prokaryotic cells, they do not have an extracellular state.</p>
+<p>About 25% of plasmids can directly transfer themselves from one organism to another by cell-to-cell contact in a process called conjugation. In conjugation, the plasmid-containing organism is called the donor and the organism receiving the plasmid is called the recipient. Although conjugation has been documented between two bacteria with different cell wall types, studies have mostly focused on conjugation between two unicellular Proteobacteria both with Gram-negative cell walls or two unicellular Firmicutes both with Gram-positive cell walls.</p>
+<p>Conjugative plasmids possess DNA transfer or tra genes that encode transfer (Tra) proteins required to mediate the conjugative transfer of plasmid DNA from one cell to another. Many types of plasmids can possess tra genes.</p>
+<p>Initial contact between the donor and the recipient is made with conjugation pili (Fig 75). The proteins that compose conjugation pili are specified by some of the tra genes of the conjugative plasmid in the donor. Three kinds of conjugative pili have been described: Type IV pili, F-pili, and P-pili.</p>
+<div class="figure align-default" id="fig75">
+<a class="reference internal image-reference" href="_images/4-20.png"><img alt="_images/4-20.png" src="_images/4-20.png" style="height: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 75 </span><span class="caption-text">Plasmid conjugation.</span><a class="headerlink" href="#fig75" title="Permalink to this image">#</a></p>
+</div>
+</div>
+<div class="section" id="fate-of-hgt-dna">
+<h3>4.5.4 Fate of HGT DNA<a class="headerlink" href="#fate-of-hgt-dna" title="Permalink to this heading">#</a></h3>
+<p><strong>Plasmids</strong></p>
+<p>Plasmids can be introduced into a recipient cell via conjugation or transformation. Because plasmids are stable, independently replicating entities that can work autonomously from the chromosome, depending on the plasmid’s compatibility with the host, it can sit stably within the cytoplasm (Fig 76). Also dependent on the host, genes encoded on the plasmid can be expressed to affect the host phenotype.</p>
+<div class="figure align-default" id="fig76">
+<img alt="_images/4-21.png" src="_images/4-21.png" />
+<p class="caption"><span class="caption-number">Fig. 76 </span><span class="caption-text">Fate of plasmid and ssDNA transferred via HGT.</span><a class="headerlink" href="#fig76" title="Permalink to this image">#</a></p>
+</div>
+<p><strong>ssDNA Fragments</strong></p>
+<p>The usual fate of single-stranded (ss) donor DNA is to be degraded into nucleotides by nucleases specific for ssDNA normally present in bacterial cells. Occasionally ss donor DNA fragments escape degradation because they interact with the protein RecA. If this happens there is the potential for the donor DNA to become integrated into the recipient chromosome (Fig 4.21). It depends on whether the donor DNA and recipient chromosomal DNA share homology. When two regions of DNA exhibit a high degree of nucleotide sequence similarity, they are said to be homologous. If two molecules of DNA share a region of homology of at least a few hundred nucleotides, the two molecules may become joined together at the region of homology by a process called <strong>homologous recombination</strong>. Homologous recombination is mediated by the RecA protein. Besides RecA, enzymes with endonuclease (nickase) and ligase activities are involved in the process. This would allow the DNA fragment to incorporate itself into the chromosome and depending on the host conditions, those genes may be expressed to alter or affect the host phenotype.</p>
+</div>
+</div>
+<div class="section" id="case-study-transferring-toxins-through-transduction">
+<h2>Case Study: Transferring toxins through transduction<a class="headerlink" href="#case-study-transferring-toxins-through-transduction" title="Permalink to this heading">#</a></h2>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">This case study was adapted from: <strong>Park and Park, 2021</strong></p>
+<p class="sd-card-text">Park D, Park J. Characteristics of bacteriophage isolates and expression of Shiga toxin genes transferred to non Shiga toxin producing <em>E. coli</em> by transduction. J. Microbiol. Biotechnol. 31(5):710-716</p>
+</div>
+</div>
+</div>
+<p><strong>Overview</strong></p>
+<p>Shiga toxin is a type of bacterial toxin produced by <em>Escherichia coli</em> and <em>Shigella dysenteriae</em> that can cause diseases in both humans and animals. Not all strains of <em>E. coli</em> can produce this toxin, but there is a concern that environmental bacteriophages are helping to transfer this toxin gene to non-toxin producing <em>E. coli</em> via transduction. Park and Park hypothesized that strains of phage carrying Shiga toxin that were most effective at infecting <em>E. coli</em> would also result in the highest rate of transduction.</p>
+<p><strong>Step 1: Testing different phages against non-toxin containing <em>E. coli</em> strains</strong></p>
+<p>The authors looked at two types of Shiga toxin genes, <em>stx1 and stx2</em>. They tested 9 different phage variants against 5 different non-toxic strains of <em>E. coli</em>.</p>
+<p><strong>Table 4.1</strong>. Infection detection of 9 different Stx-encoding phage (each row) against 5 different non-toxic strains of <em>E. coli</em> (each column). + infection detected, - infection not detected.</p>
+<div class="figure align-default" id="table4-1">
+<img alt="_images/table4-1.png" src="_images/table4-1.png" />
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Questions to consider:</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">How do you compare what is considered high infection rate versus low?</p></li>
+<li><p class="sd-card-text">Which phage variants had the lowest infection rate? Which had the highest?</p></li>
+<li><p class="sd-card-text">Are there strains of <em>E. coli</em> that were more susceptible to infection? more resistant?</p></li>
+</ol>
+</div>
+</div>
+</div>
+<p><strong>Step 2: Detecting the Shiga toxin genes in <em>E. coli</em> strains</strong></p>
+<p><strong>Table 4.2</strong>. Detection of two types of Shiga toxin genes chromosomally in originally non-toxic E. coli strains. In brackets, the phage variant which infected the strain is indicated.</p>
+<div class="figure align-default" id="table4-2">
+<img alt="_images/table4-2.png" src="_images/table4-2.png" />
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Questions to consider:</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Which phage variants had the lowest infection rate? Which had the highest?</p></li>
+<li><p class="sd-card-text">Are there strains of <em>E. coli</em> that were more susceptible to infection? more resistant?</p></li>
+<li><p class="sd-card-text">Does this data correspond to the data in Table 4.1 when it comes to infectivity of phage and susceptibility of <em>E. coli</em> strain?</p></li>
+<li><p class="sd-card-text">Which gene appears to be transferred more often through transduction?</p></li>
+</ol>
+</div>
+</div>
+</div>
+<p><strong>Step 3: Detecting Shiga toxin production induced by osmotic pressure</strong></p>
+<p>In the last step, Park and Park wanted to look at the actual levels of toxins being secreted. They hypothesized that the production of Shiga toxin is dependent on salt concentration as osmotic pressure could induce Shiga toxin production. They measured the number of viable stx1 and stx2 containing <em>E. coli</em> cells and level of the Stx1 and Stx2 toxins with increasing salt concentrations as follows:</p>
+<div class="figure align-default" id="fig77">
+<a class="reference internal image-reference" href="_images/4-23.png"><img alt="_images/4-23.png" src="_images/4-23.png" style="height: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 77 </span><span class="caption-text">Shiga toxin levels (<em>stx1 and stx2</em>) and bacterial cell viability with increasing salt concentration.</span><a class="headerlink" href="#fig77" title="Permalink to this image">#</a></p>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Questions to consider:</strong>*</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Is Shiga toxin production reliant on osmotic pressure (ie. salt concentration)? If it is, is there an optimal condition for production of each Shiga toxin?</p></li>
+<li><p class="sd-card-text">What is the relationship between cell viability and salt concentration? Why do you think this relationship exists the way that it does?</p></li>
+<li><p class="sd-card-text">What is the relationship between cell viability and Shiga toxin production if any?</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="unit1-chap3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Chapter 3: Microbial Growth in the Lab and in Nature</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="unit1-chap5.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 5: Sensing and Responding to the Environment</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#genetic-organization">4.1 Genetic Organization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#genotype-and-phenotype">4.1.1 Genotype and Phenotype</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gene-structure">4.2 Gene Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-genes">4.2.1 Individual Genes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operons">4.2.2 Operons</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gene-expression">4.3 Gene Expression</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transcription">4.3.1 Transcription</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#translation">4.3.2 Translation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regulating-gene-expression">4.4 Regulating Gene Expression</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#promoter-strength">4.4.1 Promoter Strength</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regulatory-proteins">4.4.2 Regulatory Proteins</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mrna-degradation">4.4.3 mRNA Degradation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protein-degradation">4.4.4 Protein Degradation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-glucose-lactose-diauxie">Case Study: Glucose-lactose Diauxie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-gene-transfer-hgt">4.5 Horizontal Gene Transfer (HGT)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformation">4.5.1 Transformation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transduction">4.5.2 Transduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conjugation">4.5.3 Conjugation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fate-of-hgt-dna">4.5.4 Fate of HGT DNA</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-transferring-toxins-through-transduction">Case Study: Transferring toxins through transduction</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By MICB 211 Teaching Team led by Evelyn Sun
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

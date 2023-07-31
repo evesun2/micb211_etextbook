@@ -1,0 +1,699 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 5: Sensing and Responding to the Environment &#8212; MICB 211 Foundations in Microbiology eTextbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unit1-chap5';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Chapter 1: The Human Microbiome" href="unit2-chap1.html" />
+    <link rel="prev" title="Chapter 4: Gene Expression and Regulation" href="unit1-chap4.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    MICB 211 E-Textbook Acknowledgements
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unit 1</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap1.html">Chapter 1: Introduction to Microbiology and Data Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap2.html">Chapter 2: Microbial Cell Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap3.html">Chapter 3: Microbial Growth in the Lab and in Nature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap4.html">Chapter 4: Gene Expression and Regulation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 5: Sensing and Responding to the Environment</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unit 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit2-chap1.html">Chapter 1: The Human Microbiome</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Funit1-chap5.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/unit1-chap5.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 5: Sensing and Responding to the Environment</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-transduction">5.1 Signal Transduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-and-two-component-systems">5.2 One and Two-component Systems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-component-system">5.2.1 One-component system</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#two-component-system">5.2.2 Two-component system</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#responses">5.2.3 Responses</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#knock-out-mutants-and-complements">5.3 Knock-out Mutants and Complements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#knock-out-mutants">5.3.1 Knock-out Mutants</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#laboratory-plasmids">Laboratory Plasmids</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#complements">Complements</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-metal-sensing">Case Study: Metal Sensing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-5-sensing-and-responding-to-the-environment">
+<h1>Chapter 5: Sensing and Responding to the Environment<a class="headerlink" href="#chapter-5-sensing-and-responding-to-the-environment" title="Permalink to this heading">#</a></h1>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Learning Objectives</strong></p>
+<p class="sd-card-text">By the end of this chapter, students will be expected to:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">define what signal transduction means</p></li>
+<li><p class="sd-card-text">differentiate between one and two-component systems</p></li>
+<li><p class="sd-card-text">identify the sensor and response regulator of one and two-component systems</p></li>
+<li><p class="sd-card-text">describe how reporter plasmids are used to study response regulatory systems</p></li>
+<li><p class="sd-card-text">interpret data collected from the use of reporter plasmids and knock-out mutants</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="signal-transduction">
+<h2>5.1 Signal Transduction<a class="headerlink" href="#signal-transduction" title="Permalink to this heading">#</a></h2>
+<p>Prokaryotes can sense numerous aspects of their environment including changes in chemical gradients, pH, osmolarity, light and magnetic fields. They also have the ability to respond to these sensations. Different sensing-response systems act over different time scales. Some sensations trigger an immediate change in behaviour without the synthesis of any new proteins while others require a change in gene expression because new proteins are required to respond to the sensation.</p>
+</div>
+<div class="section" id="one-and-two-component-systems">
+<h2>5.2 One and Two-component Systems<a class="headerlink" href="#one-and-two-component-systems" title="Permalink to this heading">#</a></h2>
+<p>Sensing and responding to the environment involve protein-based signal transduction systems. There are two kinds of signal transduction systems: one-component and two-component systems (Fig 78) that we will introduce in this unit. We will introduce you to more systems in Unit 2. In prokaryotes, one-component systems are much more common than two-component systems.</p>
+<div class="figure align-default" id="fig78">
+<a class="reference internal image-reference" href="_images/5-1.png"><img alt="_images/5-1.png" src="_images/5-1.png" style="height: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 78 </span><span class="caption-text">One- and two-component signal transduction systems.</span><a class="headerlink" href="#fig78" title="Permalink to this image">#</a></p>
+</div>
+<div class="section" id="one-component-system">
+<h3>5.2.1 One-component system<a class="headerlink" href="#one-component-system" title="Permalink to this heading">#</a></h3>
+<p>A signal transduction protein is often thought-of as being composed of parts called domains (Fig 78). In one-component systems, a single protein serves two functions: one domain detects the signal (<strong>sensor kinase</strong>) and another domain initiates the cellular response (<strong>response regulator</strong>). For one-component systems, the signal is received directly by the binding of a small chemical from the environment (or a small chemical related to an environmental chemical) to the sensor kinase which is normally embedded in the plasma membrane (1). The signal activates its kinase activity which allows it to phosphorylate the response regulator to change its conformation so that it can actively bind to the DNA, specifically to the promoter region of genes that it regulates. This triggers a change in gene expression to either promote the production of proteins needed to respond to the sensation or even turn off the expression of proteins that may be making it respond negative to the change in environmental condition.</p>
+</div>
+<div class="section" id="two-component-system">
+<h3>5.2.2 Two-component system<a class="headerlink" href="#two-component-system" title="Permalink to this heading">#</a></h3>
+<p>In two-component systems, the two domains are separate proteins. The sensor detects the signal and interacts with a second protein which is the response regulator (Fig 78). The main difference between a two- versus one-component system is whether the two domains are separate proteins (two-component) or one protein (one-component). Note that in a one-component system, the response regulator is physically attached to the sensor which is membrane-bound but in a two-component system, the response regulator is free-floating in the cytoplasm. Therefore, in a two-component system, the response regulator can actively find and bind to its target whereas in a one-component system, the entire system is constrained to the membrane and either the system has to navigate around the membrane, and/or the DNA target has to shift to meet the response regulator (2). Two-component systems are not constrained and therefore can, in most cases, elicit a faster response. It is likely that this is a consequence of the evolution of one-component systems into a more efficient system like the two-component system. Still, in Bacteria, typically there are more one-component systems than two-components systems. This may be dependent on the types of responses and signals that have driven this evolution.</p>
+</div>
+<div class="section" id="responses">
+<h3>5.2.3 Responses<a class="headerlink" href="#responses" title="Permalink to this heading">#</a></h3>
+<p>For both one- and two-component systems, responses are specific dependent on the function of the output domain. There are three broad classes of output domains: those with enzymatic activity, those that bind to other proteins and those that bind to DNA to affect transcription and thereby gene expression. By far, the vast majority of output domains in prokaryotes bind to DNA so their primary role is to affect transcription and thus the synthesis of new proteins in order to mediate a cellular response.</p>
+</div>
+</div>
+<div class="section" id="knock-out-mutants-and-complements">
+<h2>5.3 Knock-out Mutants and Complements<a class="headerlink" href="#knock-out-mutants-and-complements" title="Permalink to this heading">#</a></h2>
+<p>In this section, we want to explore techniques used by researchers to study signal transduction systems specifically through the use of <strong>“knock-out” mutants and “complementation”</strong> using laboratory-made plasmids.</p>
+<div class="section" id="knock-out-mutants">
+<h3>5.3.1 Knock-out Mutants<a class="headerlink" href="#knock-out-mutants" title="Permalink to this heading">#</a></h3>
+<p>One of the ways we study regulatory systems in microbes is through the use of “knock-out” mutants. Knock-out mutants are laboratory derived strains in which the researchers have purposely deleted a gene of interest to see what happens to the phenotype that they are studying. For example, if a researcher is interested in seeing if <em>fliC</em>, a gene involved in flagellar biosynthesis, is involved in swimming motility, the researcher can knock-out <em>fliC</em> and look for the absence or inhibition of swimming (Fig 79). If the gene is essential for that phenotype, we normally expect the phenotype to be attenuated or absent in the mutant compared to the wild-type. In Fig 79, the absence of a flagella when <em>fliC</em> is knocked-out suggests that <em>fliC</em> is important in regulating flagella biosynthesis.</p>
+<div class="figure align-default" id="fig79">
+<img alt="_images/5-2.png" src="_images/5-2.png" />
+<p class="caption"><span class="caption-number">Fig. 79 </span><span class="caption-text">Example of a knock-out mutant of <em>fliC</em>, gene that encodes protein responsible for regulating flagella biosynthesis.</span><a class="headerlink" href="#fig79" title="Permalink to this image">#</a></p>
+</div>
+<div class="section" id="laboratory-plasmids">
+<h4>Laboratory Plasmids<a class="headerlink" href="#laboratory-plasmids" title="Permalink to this heading">#</a></h4>
+<p>Before we can talk about what a complement is, we need to understand what laboratory plasmids are. In Unit 1 Chapter 4, you explored the concept of plasmids as naturally occurring systems in Bacteria. Like so many different systems, we have harnessed plasmids which are naturally occurring in microbes as a technology that we can use in the lab and in research. There are two types of lab plasmids that we will discuss here: <strong>expression plasmids and reporter plasmids</strong>. The two primarily differ based on the purpose of use.</p>
+<p>Some general features of a plasmid (Fig 80) include:</p>
+<ol class="arabic simple">
+<li><p>origin of replication (<strong>Ori</strong>): allows the plasmid to replicate independently of the chromosome</p></li>
+<li><p>often two <strong>selection/selectable markers</strong>: this allows us to selectively grow the cells that have taken up the plasmid (this normally occurs through a form of horizontal gene transfer called transformation (Unit 1 Chap 4)). Types of selection markers can include antibiotic resistance genes or metabolic selector genes.</p></li>
+<li><p><strong>multiple cloning sites (MCS)</strong>: these are regions where we can insert a target gene and/or target promoter region (this includes the operator).</p></li>
+</ol>
+<div class="figure align-default" id="fig80">
+<a class="reference internal image-reference" href="_images/5-3.png"><img alt="_images/5-3.png" src="_images/5-3.png" style="height: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 80 </span><span class="caption-text">General plasmid map.</span><a class="headerlink" href="#fig80" title="Permalink to this image">#</a></p>
+</div>
+<p><strong>Expression plasmids</strong> are used to produce a protein of interest. The protein of interest does not necessarily need to be bacterial in nature. A <strong>recombinant plasmid</strong> is a type of expression plasmid that has another species’ protein cloned in it. For example, we can express the human insulin protein in <em>E. coli</em>! Because <em>E. coli</em> grows relatively fast, in theory, we can mass produce insulin through this method.</p>
+<p>Expression plasmids normally have MCS in front of an existing promoter (Fig 81). The promoter is normally a promoter (like the lac operon promoter) in which the inducer is already known. This allows us to grow the bacteria on media that contains this inducer and forces expression of the protein of interest. You can also clone the gene of interest’s natural promoter and allow it to be expressed naturally, i.e. dependent on its own regulatory systems.</p>
+<div class="figure align-default" id="fig81">
+<img alt="_images/5-4.png" src="_images/5-4.png" />
+<p class="caption"><span class="caption-number">Fig. 81 </span><span class="caption-text">Comparing an expression and reporter plasmid. Note the yellow region as the cloning region of interest.</span><a class="headerlink" href="#fig81" title="Permalink to this image">#</a></p>
+</div>
+<p><strong>Reporter plasmids</strong> are a bit more challenging to understand. Contrary to expression plasmids, the goal of a reporter plasmid is not to express a gene of interest but instead to determine whether a gene of interest is being expressed. The promoter of the gene of interest is cloned in front of a reporter protein for which a read-out can be easily measured. The promoter will determine when and in what quantities the reporter protein is expressed. Two of the most common reporter proteins are the green fluorescence protein (GFP) derived from jellyfish in which you can measure fluorescence levels or the lacZ (beta-galactosidase) enzyme in which you can measure beta-galactosidase activity. In theory, the levels of your reporter protein, as detected by either fluorescence intensity or levels of beta-galactosidase activity, are an indicator that the promoter is either actively being transcribed or not. Therefore, you can use the reporter plasmid to determine conditions that activate expression of your target gene. This is a good technique for studying how a particular gene is regulated.</p>
+</div>
+<div class="section" id="complements">
+<h4>Complements<a class="headerlink" href="#complements" title="Permalink to this heading">#</a></h4>
+<p>Deleting a gene from the chromosome can have unforeseen effects on various elements including growth, regulation and expression of other genes. To ensure that these side effects, also called <strong>polar effects</strong>, are not contributing to the phenotype loss that we see with a knock-out mutant, researchers often complement the mutant by re-introducing the original gene on an expression plasmid into the cell. The gene could have its own native promoter or an inducible promoter like the lac operon promoter where the researchers can force expression of that gene. The goal of the complement is to see if we can restore the phenotype by expressing the original gene in isolation, ie. not in the chromosome. If the phenotype is restored, we can more confidently attribute that the phenotype loss was due to that single gene deletion but if it is not restored, there may have been polar effects that were contributing to the phenotype loss that may not necessarily be because of the essentiality of our target gene in regulating the phenotype. Going back to the <em>fliC</em> example (Fig 82), by transforming the bacteria with an expression plasmid containing the wild-type <em>fliC</em> gene, we can see that the cells now have flagella which suggests that the phenotype in the knock-out mutant was truly because of <em>fliC</em> and not due to some polar effects that deleting <em>fliC</em> could on other genes.</p>
+<div class="figure align-default" id="fig82">
+<img alt="_images/5-5.png" src="_images/5-5.png" />
+<p class="caption"><span class="caption-number">Fig. 82 </span><span class="caption-text">Complementation of <em>fliC</em> restore the flagellated phenotype.</span><a class="headerlink" href="#fig82" title="Permalink to this image">#</a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Knock-out and Complement Nomenclature</strong></p>
+<p>A typical convention for denoting a knock-out mutant is with the use of delta (Δ) in front of the gene(s) that has been deleted. Complements are normally denoted using a plus (+) sign after the gene that has been re-introduced into the cell using an expression plasmid.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="case-study-metal-sensing">
+<h2>Case Study: Metal Sensing<a class="headerlink" href="#case-study-metal-sensing" title="Permalink to this heading">#</a></h2>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">This case study was adapted from: <strong>Wosten et al., 2000</strong></p>
+<p class="sd-card-text">Wosten MMM, Kox LFF, Chamnongpol S, Soncini FC, Groisman EA. 2000. A signal transduction system that responds to extracellular iron. Cell. 103: 113-125</p>
+</div>
+</div>
+</div>
+<p><strong>Overview</strong></p>
+<p>In this case study paper, Wosten et al. were interested in studying 2 different two-component systems in the food-poison associated pathogen <em>Salmonella enterica</em>; both used to sense different metal ions. The PhoPQ system is an extensively studied two-component system that senses low levels of Mg2+. The PmrAB system is a less well-known system that senses high Fe2+ levels. In their model (Fig 83), they proposed a possibility that there is cross-talk between the two systems through PmrD. PmrD is up-regulated by PhoP and activates PmrB phosphorylation of PmrA.</p>
+<p>Wosten et al. went about their research following a series of questions:</p>
+<div class="figure align-default" id="fig83">
+<img alt="_images/5-6.png" src="_images/5-6.png" />
+<p class="caption"><span class="caption-number">Fig. 83 </span><span class="caption-text">Model of 2 two-component systems, PhoPQ and PmrAB, used to sense different metal ions in S. enterica.</span><a class="headerlink" href="#fig83" title="Permalink to this image">#</a></p>
+</div>
+<p><strong>Step 1: What signal(s) can be used to activate PmrA?</strong></p>
+<p>The first thing Wosten et al. wanted to determine was what signal or signals were needed to activate PmrA (ie. phosphorylate PmrA). They created a reporter plasmid with the <em>pbgP</em> promoter cloned in it to determine levels of activated PmrA under different conditions. They collected the following data:</p>
+<div class="figure align-default" id="fig84">
+<img alt="_images/5-7.png" src="_images/5-7.png" />
+<p class="caption"><span class="caption-number">Fig. 84 </span><span class="caption-text">A reporter plasmid was created using the promoter of <em>pbgP</em> in front of <em>lacZ</em> (beta-galactosidase). Beta-galactosidase activity as an indicator of <em>pbgP</em> expression was measured in low Mg or low Mg and high Fe in knock-out mutants of <em>pmrA, pmrB, phoP and phoQ</em>. The “No plasmid” control are WT <em>S. enterica</em> cells not transformed with the reporter plasmid.</span><a class="headerlink" href="#fig84" title="Permalink to this image">#</a></p>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Questions to consider:</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Why did they use the <em>pbgP</em> promoter? Why not the <em>pmrA</em> promoter for their reporter plasmid?</p></li>
+<li><p class="sd-card-text">What happens when you knock-out <em>pmrA, pmrB, phoP, phoQ</em> to the model proposed in Figure 5.6?</p></li>
+<li><p class="sd-card-text">What is a no plasmid control? What is it supposed to test for? What does the data show for this control?</p></li>
+<li><p class="sd-card-text">Is there a treatment group that you would like to include?</p></li>
+<li><p class="sd-card-text">What signal(s) are needed to activate PmrA?
+a.	Low Mg2+ only
+b.	High Fe2+ only
+c.	Low Mg2+ AND high Fe2+
+d.	Low Mg2+ OR high Fe2+</p></li>
+</ol>
+</div>
+</div>
+</div>
+<p><strong>Step 2: What genes could PmrA be regulating?</strong></p>
+<p>Like many two-component system regulators, PmrA is promiscuous which means that it can bind to and activate or repress several different promoters of different genes. The researchers were interested in 5 different genes so they created reporter plasmids using the promoters of those genes to determine if PmrA was regulating them in a <em>phoQ</em> knock-out mutant.</p>
+<div class="figure align-default" id="fig85">
+<img alt="_images/5-8.png" src="_images/5-8.png" />
+<p class="caption"><span class="caption-number">Fig. 85 </span><span class="caption-text">Beta-galactosidase activity measured in <em>S. enterica</em> transformed with reporter plasmids made using the promoters of <em>ugd, pbgP, pmrC, mgtA, or pcgL</em> cloned upstream of <em>lacZ</em> under low Mg or low Mg and high Fe conditions.</span><a class="headerlink" href="#fig85" title="Permalink to this image">#</a></p>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Questions to consider:</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Why did they do this experiment in a <em>phoQ</em> mutant and not the WT?</p></li>
+<li><p class="sd-card-text">Why do you not see any signal in the low Mg2+ conditions? Is this expected?</p></li>
+<li><p class="sd-card-text">What does the beta-galactosidase activity measure?</p></li>
+<li><p class="sd-card-text">Which of the 5 tested genes are regulated by PmrA?</p></li>
+</ol>
+</div>
+</div>
+</div>
+<p><strong>Step 3: Are the PhoPQ and PmrAB systems involved in antibiotic resistance?</strong></p>
+<p>Interestingly, the genes that were found to be regulated by PmrA in Step 2 were all genes that had previously been reported to be involved in promoting antibiotic resistance. So, the researchers wanted to see whether the PhoPQ and PmrAB systems were involved in resistance against the antibiotic, Polymyxin B. They collected the following data:</p>
+<div class="figure align-default" id="fig86">
+<img alt="_images/5-9.png" src="_images/5-9.png" />
+<p class="caption"><span class="caption-number">Fig. 86 </span><span class="caption-text">Percent survival of S. enterica WT, phoP knock-out, or pmrA knock-out treated with polymyxin B antibiotic under low Mg or low Mg and high Fe conditions.</span><a class="headerlink" href="#fig86" title="Permalink to this image">#</a></p>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Questions to consider:</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Go back to the model in Figure 83 and match it up to which systems, PhoP or PmrA, would be activated in the <em>phoP and pmrA</em> mutants versus the WT under the two treatment conditions.</p></li>
+<li><p class="sd-card-text">Which systems, PhoPQ or PmrAB, appear to promote resistance against Polymyxin B?</p></li>
+<li><p class="sd-card-text">Does one system promote better resistance than the other? If so, which one? How can you tell?</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Jung, H. et al. Twelve quick steps for genome assembly and annotation in the classroom. PLoS Comput. Biol. 16, e1008325 (2020).</p></li>
+<li><p>Mitrophanov, A. Y. &amp; Groisman, E. A. Signal integration in bacterial two-component regulatory systems. Genes Dev. 22, 2601–2611 (2008).</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="unit1-chap4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Chapter 4: Gene Expression and Regulation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="unit2-chap1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 1: The Human Microbiome</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-transduction">5.1 Signal Transduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-and-two-component-systems">5.2 One and Two-component Systems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-component-system">5.2.1 One-component system</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#two-component-system">5.2.2 Two-component system</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#responses">5.2.3 Responses</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#knock-out-mutants-and-complements">5.3 Knock-out Mutants and Complements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#knock-out-mutants">5.3.1 Knock-out Mutants</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#laboratory-plasmids">Laboratory Plasmids</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#complements">Complements</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-metal-sensing">Case Study: Metal Sensing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By MICB 211 Teaching Team led by Evelyn Sun
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,854 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 1: Introduction to Microbiology and Data Analysis &#8212; MICB 211 Foundations in Microbiology eTextbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unit1-chap1';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Chapter 2: Microbial Cell Structures" href="unit1-chap2.html" />
+    <link rel="prev" title="MICB 211 E-Textbook Acknowledgements" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    MICB 211 E-Textbook Acknowledgements
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unit 1</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 1: Introduction to Microbiology and Data Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap2.html">Chapter 2: Microbial Cell Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1-chap3.html">Chapter 3: Microbial Growth in the Lab and in Nature</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unit 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit2-chap1.html">Unit 2: Chapter 1</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Funit1-chap1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/unit1-chap1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 1: Introduction to Microbiology and Data Analysis</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introducing-the-field-of-microbiology">1.1 Introducing the Field of Microbiology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-the-name-of-microbiology">1.1.1 In the name of microbiology!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attempting-to-define-microbiology">1.1.2 Attempting to define Microbiology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#environmental-microbiology-and-microbial-ecology">1.1.3 Environmental microbiology and microbial ecology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medical-microbiology">1.1.4 Medical microbiology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-many-branches-of-microbiology">1.1.5 The many branches of microbiology</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-the-world-of-prokaryotic-cells">1.2 Exploring the World of Prokaryotic Cells</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-we-classify-organisms">1.2.1 How we classify organisms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cellular-microbes">1.2.2 Cellular Microbes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beyond-domains-microbial-classification-and-diversity">1.3 Beyond domains: microbial classification and diversity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phyla">1.3.1 Phyla</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-microbiology-through-data-analysis">1.4 Understanding microbiology through data analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#journals">1.4.1 Journals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-data">1.4.2 Types of Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpreting-qualitative-data">1.4.3 Interpreting Qualitative Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpreting-quantitative-data">1.4.4 Interpreting Quantitative Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-getting-comfortable-with-data">Case Study: Getting comfortable with data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-1-introduction-to-microbiology-and-data-analysis">
+<h1>Chapter 1: Introduction to Microbiology and Data Analysis<a class="headerlink" href="#chapter-1-introduction-to-microbiology-and-data-analysis" title="Permalink to this heading">#</a></h1>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Learning Objectives</strong></p>
+<p class="sd-card-text">By the end of this chapter, students will be expected to:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">format scientific names based on the proper conventions</p></li>
+<li><p class="sd-card-text">describe how biologists organize organisms and how prokaryotes are classified</p></li>
+<li><p class="sd-card-text">distinguish between eukaryotic and prokaryotic cells</p></li>
+<li><p class="sd-card-text">distinguish between the different branches of microbiology, specifically microbial ecology, environmental and medical microbiology</p></li>
+<li><p class="sd-card-text">appreciate the diversity of the microbial world and why we study microbiology through model organisms</p></li>
+<li><p class="sd-card-text">describe how Bacteria are generally classified</p></li>
+<li><p class="sd-card-text">use your observation skills as a training scientist to describe qualitative and quantitative data</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="introducing-the-field-of-microbiology">
+<h2>1.1 Introducing the Field of Microbiology<a class="headerlink" href="#introducing-the-field-of-microbiology" title="Permalink to this heading">#</a></h2>
+<div class="section" id="in-the-name-of-microbiology">
+<h3>1.1.1 In the name of microbiology!<a class="headerlink" href="#in-the-name-of-microbiology" title="Permalink to this heading">#</a></h3>
+<p>Up until 1985, it was commonly believed that stomach ulcers were primarily caused by stress or spicy foods (1). Dr. Robin Warren, a pathologist working in Australia in 1982, made an observation that changed this belief (2). He noticed helical shaped microorganisms that were found in about half of patients diagnosed with gastric ulcers. His colleague, Dr. Barry Marshall, became really interested in this observation and began to study the samples collected from those patients. Ultimately, he cultured a new bacterial species, now known as <em>Helicobacter pylori</em>.</p>
+<div class="figure align-default" id="fig1-1">
+<a class="reference internal image-reference" href="_images/1-1.png"><img alt="_images/1-1.png" src="_images/1-1.png" style="height: 250px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Drs. Barry Marshall (right) and Robin Warren (left).</span><a class="headerlink" href="#fig1-1" title="Permalink to this image">#</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Formatting scientific names</strong></p>
+<p>All living organisms that have been observed or identified are given a binary scientific name that includes the Greek classifications for the genus and species of that organism. For example, humans come from the genus Homo and species Sapiens. Hence, the scientific name for humans is <em>“Homo sapiens”</em>. The <strong>genus is always capitalized and species lower-cased, all italicized</strong>. The first time a scientific name is stated, it is written out whole but subsequent uses abbreviate the genus, e.g. <em>H. sapiens</em>.</p>
+</div>
+<p>Although Dr. Marshall was convinced that <em>H. pylori</em> was not only capable of growing in the harsh, acidic environment of the human stomach but was also responsible for ulcers, the scientific community did not agree. To convince them, Dr. Marshall drank a flask of H. pylori culture and developed a life-threating ulcer. In 2005, Dr. Barry Marshall and Dr. Robin Warren were awarded the Nobel Prize for their discovery of <em>H. pylori</em> and its role in causing gastric ulcers (Fig 2). Dr. Marshall travelled to Sweden to personally receive the prize (1,2).</p>
+<div class="figure align-default" id="fig1-2">
+<a class="reference internal image-reference" href="_images/1-2.png"><img alt="_images/1-2.png" src="_images/1-2.png" style="height: 250px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text"><em>H. pylori</em> infecting the gut.</span><a class="headerlink" href="#fig1-2" title="Permalink to this image">#</a></p>
+</div>
+</div>
+<div class="section" id="attempting-to-define-microbiology">
+<h3>1.1.2 Attempting to define Microbiology<a class="headerlink" href="#attempting-to-define-microbiology" title="Permalink to this heading">#</a></h3>
+<p>Microbiology is often defined as a field of study concerned with <strong>microorganisms</strong>, organisms too small to be seen with the naked eye (3).</p>
+<p>This definition is quite broad, and maybe it has to be, to encompass all of the different elements of “microbiology”. The more you learn about microbiology, the more you realize how difficult it is to sum up what “microbiology” is in one sentence, and you will also find that not all microbiologists would agree on a singular definition for what a <em>“microorganism”</em> is. Some microbiologists might argue that some microorganisms can be seen with the naked eye and some may not even be considered “living”.</p>
+<p>Despite the complexities of trying to define microbiology, we strive to have a definition as a starting point of understanding what it is. One thing that all microbiologists can agree with is that microorganisms play an important role in all processes on Earth including various aspects of our lives. Did you ever receive a vaccine? That’s microbiology! Did you ever get a cold? That’s microbiology? Are you breathing oxygen? Microbes provided that! Microorganisms play so many important roles that we attempted to compartmentalize this field into two branches: Environmental Microbiology and Medical Microbiology (Fig 3).</p>
+<div class="figure align-default" id="fig1-3">
+<img alt="_images/1-3.png" src="_images/1-3.png" />
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Branches of microbiology.</span><a class="headerlink" href="#fig1-3" title="Permalink to this image">#</a></p>
+</div>
+</div>
+<div class="section" id="environmental-microbiology-and-microbial-ecology">
+<h3>1.1.3 Environmental microbiology and microbial ecology<a class="headerlink" href="#environmental-microbiology-and-microbial-ecology" title="Permalink to this heading">#</a></h3>
+<p><strong>Environmental microbiology</strong> is often equated, incorrectly, with microbial ecology. In a way this confusion is useful because a comparison of the two brings into sharper focus what environmental microbiology is about.</p>
+<p>The goal of <strong>microbial ecology</strong> is <em>to understand the ecological niches of microorganisms, that is, “their place in the natural world.”</em> The ecological niche of an organism is the sum total of the conditions it requires, the resources it uses and the contributions it makes to the integrated whole of the ecosystem of which it is a part. Because microbial ecology is concerned with understanding how microbes interact with the biotic and abiotic components of their environment, understanding the three-dimensional architecture and physiochemical nature of their environments at a microscale is needed. That is, because microbes are very small, we also have to think very small when considering their (micro) environments.</p>
+<p>As far as environmental microbiology goes, quoting Thomas Brock with minor edits: <em>“Environmental microbiology is not concerned with the particular (micro) environments where microbes actually function but with the broader scale impacts of microbial presence and activities. One can study these microbially mediated processes and their possible impacts at the scale of environmental microbiology without knowing about the specific (micro) environments where these processes actually take place.”</em> Another difference between microbial ecology and environmental microbiology concerns the emphasis on the “human factor”. Microbial ecology emphasizes the so-called “natural” world, not the “human-made” world. Environmental microbiology on the other hand, embraces the microbiology of human creations like sewage treatment plants, mining operations and even food products.</p>
+</div>
+<div class="section" id="medical-microbiology">
+<h3>1.1.4 Medical microbiology<a class="headerlink" href="#medical-microbiology" title="Permalink to this heading">#</a></h3>
+<p>Because environmental microbiology concerns how microbial activity affects the Earth’s environment (= <strong>planetary health</strong>), it also deals with human health. This being said, environmental microbiology is not concerned with how microorganisms cause disease. This is medical microbiology. Perhaps the distinction between the health-related   aspects of environmental microbiology and <strong>medical microbiology</strong> can be illuminated with the following statement: How disease-causing microorganisms survive, evolve and spread in the environment is part of environmental microbiology but how they cause disease once they arrive at their “victim” and how their victim responds to the assault is  not environmental microbiology, it is medical microbiology.</p>
+<p>It needs to be emphasized that because of the historical connection between the development of microbiology as a scientific discipline and the understanding of infectious disease, microorganisms are viewed today mainly as agents of disease leading to the popular image of a malignant and hostile microbial world. In fact, disease-causing microbes constitute only a very small fraction of the recognized microbial species on the Earth; the vast majority of microorganisms serve critical and beneficial roles in the biosphere. This being said, the small proportion of microorganisms that do cause disease can nevertheless inflict serious pain and suffering on human beings (and other organisms). Thus, microbiologists have spent much time developing methods to control microbial populations by either killing microbes outright or by inhibiting their reproduction.</p>
+</div>
+<div class="section" id="the-many-branches-of-microbiology">
+<h3>1.1.5 The many branches of microbiology<a class="headerlink" href="#the-many-branches-of-microbiology" title="Permalink to this heading">#</a></h3>
+<p>Aside from dividing the field into two major branches, Environmental Microbiology and Medical Microbiology, we often sub-divide these branches based on the type of microorganism in question (Fig 4). If you study bacteria, for example, you are a bacteriologist studying bacteriology. If you study viruses, you are a virologist studying virology.</p>
+<div class="figure align-default" id="fig1-4">
+<img alt="_images/1-4.png" src="_images/1-4.png" />
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Different microorganisms studied by microbiologists.</span><a class="headerlink" href="#fig1-4" title="Permalink to this image">#</a></p>
+</div>
+<p><strong>In this course, we will focus primarily on bacteria as our model microorganisms of interest.</strong></p>
+</div>
+</div>
+<div class="section" id="exploring-the-world-of-prokaryotic-cells">
+<h2>1.2 Exploring the World of Prokaryotic Cells<a class="headerlink" href="#exploring-the-world-of-prokaryotic-cells" title="Permalink to this heading">#</a></h2>
+<div class="section" id="how-we-classify-organisms">
+<h3>1.2.1 How we classify organisms<a class="headerlink" href="#how-we-classify-organisms" title="Permalink to this heading">#</a></h3>
+<p>Life, including microbial life, is commonly divided into <strong>cellular</strong> and <strong>acellular</strong> forms. As far as cellular life goes, since about 1980, microbiologists have organized the world of cellular organisms with respect to their domain affiliation, that is, whether an organism is a member of the <strong>Bacteria, Archaea or Eukarya</strong> domain; each kind of organism is composed of a unique cell type (Fig 5).</p>
+<div class="figure align-default" id="fig1-5">
+<img alt="_images/1-5.png" src="_images/1-5.png" />
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Classification of organisms.</span><a class="headerlink" href="#fig1-5" title="Permalink to this image">#</a></p>
+</div>
+<p>Acellular organisms are commonly called <strong>viruses</strong>. There are fundamental differences   between cellular and acellular microorganisms.</p>
+<ul class="simple">
+<li><p>Cells possess DNA as their genetic material while different viruses use either DNA or RNA to specify their characteristics.</p></li>
+<li><p>In order to reproduce, proteins must be synthesized which depends on the action of ribosomes. While <em>all</em> cellular organisms possess <em>all</em> the genes necessary to build functional ribosomes, viruses <em>never</em> do. For this reason, all viruses must use (infect) the cells of other organisms (their hosts) to synthesize proteins.</p></li>
+</ul>
+<p><strong>Besides bacteriophages (viruses that infect bacteria), viruses will not be the focus of this course. You can learn more about viruses in MICB 212.</strong></p>
+</div>
+<div class="section" id="cellular-microbes">
+<h3>1.2.2 Cellular Microbes<a class="headerlink" href="#cellular-microbes" title="Permalink to this heading">#</a></h3>
+<p>Eukaryal microorganisms include fungi, algae, protozoa, and slime molds. Most eukaryal cells are <strong>eukaryotic</strong>, that is, they possess a “true” membrane-bound nucleus. Eukaryal microbial cells also <em>usually</em> possess a variety of membranous organelles (eg. mitochondria, chloroplasts, ER, Golgi etc). These organelles serve various functions and divide the cytoplasm into compartments within which specific, distinct, specialized activities take place.</p>
+<div class="figure align-default" id="fig1-6">
+<img alt="_images/1-6.png" src="_images/1-6.png" />
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Structure of a prokaryote as represented by a bacterial cell (left) and eukaryote as represented by an animal cell (right).</span><a class="headerlink" href="#fig1-6" title="Permalink to this image">#</a></p>
+</div>
+<p>Bacterial and archaeal microorganisms are composed of <strong>prokaryotic</strong> cells, that is, they lack a membrane around their     chromosomal DNA and instead possess a nuclear region or nucleoid. Besides lacking nucleus, <em>most</em> bacterial and archaeal cells also lack other membrane-bound organelles internal to the cytoplasmic membrane. This means the cellular activities of <em>most</em>  Bacteria and Archaea are not sequestered in specialized compartments but occur together in the cytoplasm. Despite this lack of intracellular compartmentalization, as a group, bacterial and archaeal cells perform all of the same basic cellular processes that eukaryal cells do.</p>
+<p>Because of their similar structural plans, bacterial and archaeal cells cannot be reliably distinguished from one another microscopically. In order to tell the difference between these organisms, they must be examined at the molecular level. Consider the following analogy: From a distance, both sharks and dolphins appear to have the same basic structure or body plan. However, a closer look reveals fundamental structural and physiological differences: dolphins are air-breathing mammals with lungs while sharks are fish with gills. Similarly, both Bacteria and Archaea have the same basic body plan (both are made of prokaryotic cells) but the structures of the molecules that make-up each cell type as well as the molecular details of many cellular processes differ between the two types of organisms.</p>
+</div>
+</div>
+<div class="section" id="beyond-domains-microbial-classification-and-diversity">
+<h2>1.3 Beyond domains: microbial classification and diversity<a class="headerlink" href="#beyond-domains-microbial-classification-and-diversity" title="Permalink to this heading">#</a></h2>
+<p>Despite the similar ways organisms are named, there are differing criteria with respect to defining a species for different parts of the biological world. The definition of species for “higher order” eukaryotes is <em>an interbreeding group of sexually-reproducing organisms that yield fertile offspring and are reproductively isolated from other organisms (4)</em>. Because prokaryotes are haploid and reproduce asexually, this definition is not applicable to them. A bacterial or archaeal species is defined as <em>a collection of organisms (called strains) characterized by a “high degree of similarity” in the nucleotide sequences of their genomes and their phenotypic properties.</em> In other words, prokaryotic species are delineated as a group of similar strains that differ more from other <strong>strains</strong> than they do from each other.</p>
+<p>For example, consider the “hamburger disease” Escherichia coli strain O157:H7 and the docile E. coli K-12 strain commonly used in microbiological research. The more virulent O157:H7 strain contains 20% more DNA than K-12, yet both are considered the same species. To place this in a eukaryotic context consider the primates where DNA differs very little between species. If a 20% difference in DNA was “allowed” when defining primate species, this could lead to the inclusion of members of current taxa into the same species in a way that would be ludicrous. Humans and monkeys would be the same species!</p>
+<div class="section" id="phyla">
+<h3>1.3.1 Phyla<a class="headerlink" href="#phyla" title="Permalink to this heading">#</a></h3>
+<p>Microbiologists have attempted to organize the prokaryotic world by placing species of each domain into major groups called <strong>phyla (singular = phylum)</strong>. It should be noted that there is no such thing as an “official” classification of prokaryotes that is accepted by all microbiologists. MICB 211 uses the “List of prokaryotic names with standing in nomenclature” or LPSN5. See <a class="reference external" href="http://lpsn.dsmz.de">lpsn.dsmz.de</a>.</p>
+<p>Like the case with species definitions, “creating” a phylum and “placing” an organism in it is not a purely objective matter. While the primary criterion is DNA sequence similarity, historical conventions and consensus among microbiologists also come into play especially at the margins between phyla.</p>
+<p>As far as Bacteria go, the majority are members of just a few phyla: the Proteobacteria, the Actinobacteria and the Firmicutes (see table below) In fact, these phyla constitute the majority of <em>cultured</em> Bacteria of medical, industrial and agricultural significance. This means that the prevalence of species in a particular phylum is not necessarily because it truly is so in nature but because most of the bacterial species that we can grow in the lab happen to be from that phylum.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Bacterial Phylum</p></th>
+<th class="head"><p>% of Bacterial Species</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Proteobacteria</p></td>
+<td><p>31</p></td>
+</tr>
+<tr class="row-odd"><td><p>Actinobacteria</p></td>
+<td><p>18</p></td>
+</tr>
+<tr class="row-even"><td><p>Firmicutes</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cyanobacteria</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p>Spirochetes</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Deinococcus</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Chlorobi</p></td>
+<td><p>&lt; 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Chloroflexi</p></td>
+<td><p>&lt; 1</p></td>
+</tr>
+<tr class="row-even"><td><p>Planctomycetes</p></td>
+<td><p>&lt; 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other</p></td>
+<td><p>27</p></td>
+</tr>
+</tbody>
+</table>
+<p>Because of the dominance of the Proteobacteria, the Actinobacteria and the Firmicutes  in terms of their numbers and practical importance to humans, most of the information in the microbiological literature has been derived from the study of these organisms which in turn explains why the vast majority of the information in MICB 211 concerns various members of these phyla including their <strong>model organisms</strong>. Model organisms are organisms that have been studied extensively in the field, not necessarily because they are the most important species per se. <em>E. coli</em>, for example, is a model organism in microbiology because a lot of the research has gone into studying this species.</p>
+</div>
+</div>
+<div class="section" id="understanding-microbiology-through-data-analysis">
+<h2>1.4 Understanding microbiology through data analysis<a class="headerlink" href="#understanding-microbiology-through-data-analysis" title="Permalink to this heading">#</a></h2>
+<p>A key aspect of science in general is the communication of scientific findings. When we talk about a concept in the course, these concepts are grounded in evidence, usually in the form of data. Data is, therefore, a core component that define the foundation for scientific concepts. How do we know that H. pylori is responsible for stomach ulcers? Do we base it solely on Dr. Marshall getting an ulcer after drinking a flask of H. pylori? Do you think this was enough to convince the Nobel Prize committee? Probably not. Dr. Marshall had accumulated several published papers that present data that show that H. pylori is responsible for causing ulcers in multiple patients. The culmination of research articles and data that he and his team collected throughout the years have helped build the foundation to support the <strong>claim</strong> that “<em>H. pylori</em> is responsible for causing stomach ulcers.”</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Scientific Arguments</strong></p>
+<p>As scientists and scientists-in-training, we communicate using scientific arguments that involve making a claim that is based on sound reasoning and supported by concrete evidence.</p>
+<p>For example:</p>
+<p><em>Heliobacter pylori</em> is responsible for causing stomach ulcers <em>(claim)</em> because it is capable of surviving under highly acidic environments and is highly pathogenic <em>(reason)</em>. Approximately 80% of biopsy samples from patients suffering from ulcers reveal a high bacterial load of <em>H. pylori</em> <em>(evidence)</em>.</p>
+</div>
+<div class="section" id="journals">
+<h3>1.4.1 Journals<a class="headerlink" href="#journals" title="Permalink to this heading">#</a></h3>
+<p>Researchers normally publish their research in academic journals. These journals release periodic articles that reflect the frontiers of research in a particular area. Journals normally have an impact factor which is a calculated index of how often papers published in that journal are cited or referenced by other papers. The higher the impact factor the more influential those journals are.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Referencing a Published Paper</strong></p>
+<p>When we refer to a published paper, we often refer to the authors by the last name of the first author listed on the paper followed by either the second author’s last name (if there are only 2 authors) or by “et al.” which means “and others” (if more than 2 authors) and the publication year. For example: Smith and Johnson, 2022; Smith et al., 2022</p>
+</div>
+<p>Researchers usually select journals that fit the scope of their research. They submit their manuscript, which is a written report of their research including all their data and findings, to the journal, where an editor curates the paper to determine if it is an appropriate fit for their journal. If it meets the requirements for the journal, the manuscript is shared with 2-4 professionals in the field to undergo an anonymous peer review process. This process involves having these professionals critique the paper and determine its merits and its shortcoming. Each reviewer writes a report to indicate whether they recommend publishing or not. This is a critical bottleneck in research to ensure that quality research is being published.</p>
+</div>
+<div class="section" id="types-of-data">
+<h3>1.4.2 Types of Data<a class="headerlink" href="#types-of-data" title="Permalink to this heading">#</a></h3>
+<p>Scientists are often inclined to attempt to classify or compartmentalize things. We classify organisms; we classify fields of study; and we classify data. Data is normally, primarily classified into two main categories: <strong>qualitative and quantitative</strong>. Quantitative data involves numbers, anything that can be measured numerically; whereas, qualitative data is observational in nature. It involves descriptions of what the researchers observe.</p>
+<p>Besides compartmentalizing data into those two categories, it goes even further and within each type of data are different ways to present or visualize the data. Selecting how to present data is not trivial as there may be many ways to visualize a type of data, but it is up to the researcher to evaluate what the best way to visualize it is. In this course, you will become familiar with interpreting multiple different types of data presented in several different ways.</p>
+</div>
+<div class="section" id="interpreting-qualitative-data">
+<h3>1.4.3 Interpreting Qualitative Data<a class="headerlink" href="#interpreting-qualitative-data" title="Permalink to this heading">#</a></h3>
+<p>Qualitative data can often be presented as visual figures that can show structures and components. It requires observational skills to point out characteristics that may be of interest and changes or features that may not be expected.</p>
+<p>Let’s have a look at the microscopic image of bacterial cells (Fig 7). You may want to observe it using these steps:</p>
+<ol class="arabic simple">
+<li><p>Consider what you would expect? (You may consider what shapes bacteria come in, how big they normally are, what structures they have on the surface)</p></li>
+<li><p>Are there characteristics that you know of that you can identify? (What is the shape of the bacteria, how large it is, does it have a tail (flagella)?)</p></li>
+<li><p>Are there any features or observations that you would not expect? (What are the stringy, fibre-like structures around the cells?)</p></li>
+<li><p>If applicable, how does the treatment compare to the control? Do you observe any changes?</p></li>
+</ol>
+<div class="figure align-default" id="fig1-7">
+<a class="reference internal image-reference" href="_images/1-7.png"><img alt="_images/1-7.png" src="_images/1-7.png" style="height: 200px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Example of qualitative data.</span><a class="headerlink" href="#fig1-7" title="Permalink to this image">#</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Control versus Treatment</strong></p>
+<p>When conducting an experiment, it is often typical to have a control group. The control group is normally your comparison of what you expect a normal state of being to be like. The treatment group is when you apply the intervention. It involves studying changes that may occur when you apply the treatment (eg. subject your subjects to a chemical like antibiotics, delete or mutate a gene).</p>
+</div>
+</div>
+<div class="section" id="interpreting-quantitative-data">
+<h3>1.4.4 Interpreting Quantitative Data<a class="headerlink" href="#interpreting-quantitative-data" title="Permalink to this heading">#</a></h3>
+<p>Depending on the type of quantitative data, you will need to approach interpreting the data differently. But you can apply some general steps that can help you dissect the data:</p>
+<ol class="arabic simple">
+<li><p>Look at the axes first. What is being measured on the y-axis and what is shown on the x-axis?</p></li>
+<li><p>What is the control group if any?</p></li>
+<li><p>How does the treatment groups differ from the control? Increase, decrease? Do you observe any trends?</p></li>
+<li><p>Are the differences observed actually significant? This means that the statistical analysis conducted on the data reveals that despite the standard error and other factors involved, that the difference observed is real. This is really important to consider. Often, statistics are shown on data as asterisks which indicates significant differences. A lack of asterisks usually indicates that there are no differences between the two groups. For example, in Figure 8, the measuring cup is significantly different from the glass pipette and micropipette but not the graduated cylinder even though the mean (average) is lower.</p></li>
+</ol>
+<div class="figure align-default" id="fig1-8">
+<a class="reference internal image-reference" href="_images/1-8.png"><img alt="_images/1-8.png" src="_images/1-8.png" style="height: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Example of quantitative data. Looking at the average (top of the bar graph) and variability (error bar) between 4 attempts to measure 20mL using different measuring tools. ns=not significant.</span><a class="headerlink" href="#fig1-8" title="Permalink to this image">#</a></p>
+</div>
+<p>A <strong>bar graph</strong> is normally used to visualize quantitative data that is cumulative (i.e. it is a measure that can start at zero) (Fig 8). For example, the amount of liquid added to a flask is cumulative; the flask can have no liquid (0mL) or be full (200mL). The alternative, non-cumulative data, is often shown as a scatterplot instead where individual data points are plotted. Non-cumulative data includes things that normally don’t start at zero. For example, human weight. A human cannot weigh zero pounds as they would not exist. This type of data is normally shown as a scatter plot or dot plot.</p>
+<p>A <strong>line graph</strong> is normally used to represent continuous data (Fig 9). This can include a time course where you show how temperature fluctuates over the months of a year. Non-continuous data is shown through a scatterplot where the data points do not connect. You can use a line graph to observe trends when the variable in the x-axis is changing (e.g. could be increasing concentration or time).</p>
+<div class="figure align-default" id="fig1-9">
+<img alt="_images/1-9.png" src="_images/1-9.png" />
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Bar graphs versus line graphs.</span><a class="headerlink" href="#fig1-9" title="Permalink to this image">#</a></p>
+</div>
+<p><strong>Box plots</strong> are commonly used to represent the distribution of data points. Strong data includes multiple measurements (called replicates) within one control or treatment group. A box plot shows the distribution of these replicates. Figure 10 shows a dissection of a box plot. A quartile represents 25% of the data points. The box itself containing two quartiles, therefore, represents 50% of the data points. The line dividing the two quartiles of the box plot represent the median (the middle value, not the mean). The whiskers represent the predicted range of variability within the data. Anything that falls outside of the whiskers would be considered an outlier, a data point that does not fall within the expected range. This allows you to see the variability that the replicates have within a certain control or treatment group. We will revisit this type of data visualization later in Unit 2.</p>
+<div class="figure align-default" id="fig1-10">
+<a class="reference internal image-reference" href="_images/1-10.png"><img alt="_images/1-10.png" src="_images/1-10.png" style="height: 250px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Characteristics of a box plot.</span><a class="headerlink" href="#fig1-10" title="Permalink to this image">#</a></p>
+</div>
+<p></p>
+</div>
+</div>
+<div class="section" id="case-study-getting-comfortable-with-data">
+<h2>Case Study: Getting comfortable with data<a class="headerlink" href="#case-study-getting-comfortable-with-data" title="Permalink to this heading">#</a></h2>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">This case study was adapted from: <strong>Chong et al., 2020</strong></p>
+<p class="sd-card-text">Chong, Garrovilla, Huang, and Naidu. 2020. Cell elongation induced by ftsZ antisense RNA expression in <em>Escherichia coli</em> strain DH5ɑ increases T4 bacteriophage adsorbed per cell. UJEMI 25:1-7</p>
+</div>
+</div>
+</div>
+<p><strong>Overview</strong></p>
+<p>This study was conducted by 4th UBC students in MICB 421! The students who published this study were interested in how physically longer cells could be more susceptible to being infected by bacteriophage, a type of virus that specifically infects bacteria. They observed that bacteriophage adsorb (ie. bind) to the surface of bacterial cells and this binding allows them to inject their DNA into the host where they can then reproduce and cause the cell to lyse. Chong et al. hypothesized that longer <em>Escherichia coli</em> cells have more binding sites and would be more susceptible to bacteriophage infection.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Hypotheses</strong> are commonly mistaken for predictions and in some ways they can be predictions but at much higher level. Predictions often only address what is expected in terms of results but a hypotheses also include a biological explanation or rationale that justifies the prediction.</p>
+</div>
+<p>In order to test this hypothesis, Chong et al. had to go through the following steps:</p>
+<p><strong>Step 1: Creating longer cells</strong></p>
+<p>Chong et al. first had to create a strain of <em>E. coli</em> that is longer than the <strong>wild-type</strong>. They obtained a mutated strain of E. coli that has a deletion of the <em>ftsZ</em> gene. This gene is important in regulating how the cell divides. Chong et al. hypothesized that deleting this gene would result in problems with cell division leading to elongated cells.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>What is a wild-type?</strong></p>
+<p>Phenotype that represents a form of a species that occurs in nature.</p>
+</div>
+<div class="figure align-default" id="fig1-11">
+<img alt="_images/1-11.png" src="_images/1-11.png" />
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text"><em>E. coli</em> cells stained using crystal violet and imaged using light microscopy. (A) wild-type <em>E. coli</em> cells. (B) Mutant strain of E. coli with a deletion of <em>ftsZ</em>.</span><a class="headerlink" href="#fig1-11" title="Permalink to this image">#</a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The figure and table captions, also called legends, are very descriptive. Ensure that you read through it as part of your process of analyzing the data. The figure/table caption often provides additional information you need to be able to interpret the data.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Gene and protein names</strong>
+Microbial gene names usually consist of 3 letters followed by an upper-case letter, all italicized (e.g. <em>ftsZ</em>). This is referring to the gene on the DNA. If you are referring to the protein product, expressed through this gene, capitalize the first letter, non-italicized (eg. FtsZ).</p>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Questions to consider:</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">What technique was used to collect the data?</p></li>
+<li><p class="sd-card-text">Is this type of data qualitative or quantitative?</p></li>
+<li><p class="sd-card-text">Look at the figure caption, what does panel A and panel B show?</p></li>
+<li><p class="sd-card-text">What is the treatment and what is the control group?</p></li>
+<li><p class="sd-card-text">What is your initial impression of the data?</p></li>
+<li><p class="sd-card-text">Does the data support the authors hypothesis that deleting the <em>ftsZ</em> gene would result in problems with cell division leading to elongated cells?</p></li>
+</ol>
+</div>
+</div>
+</div>
+<p><strong>Step 2: Measuring the amount of phage infection</strong></p>
+<div class="figure align-default" id="fig1-12">
+<a class="reference internal image-reference" href="_images/1-12.png"><img alt="_images/1-12.png" src="_images/1-12.png" style="height: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">Measuring the amount of phage adsorbed into <em>E. coli</em> cells in the wild-type and <em>ftsZ</em> deletion strain. *** indicates that the comparison is statistically significant. Bars represent the distribution of the data where the middle bar is the average.</span><a class="headerlink" href="#fig1-12" title="Permalink to this image">#</a></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Statistical Significance!</strong></p>
+<p>Good data is normally collected in replicates. Replicates show that they conducted the measurement independently several times. It is common to consider the average or median of all these measurements to give a more accurate representation of the findings. Not all independent measurements, however, will be exactly the same. Variation can exist in the data for various reason, external factors, errors, etc. The variability has to be taken in consideration when comparing two sets of data. Statistical measures have been developed to determine, using the average, standard deviation, and other variables, whether the change you see between two group is significant or not. The significance is usually indicated on a graph as asterisks (*).</p>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Questions to consider:</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">What is the y-axis showing? What has been measured and how?</p></li>
+<li><p class="sd-card-text">What is the x-axis showing?</p></li>
+<li><p class="sd-card-text">Is this type of data qualitative or quantitative?</p></li>
+<li><p class="sd-card-text">Why do you think the authors chose to show this as a scatterplot rather than other formats?</p></li>
+<li><p class="sd-card-text">What is the treatment and what is the control group?</p></li>
+<li><p class="sd-card-text">What is the sample size (ie. number of replicates) for each strain? (Note that each data point represents one measurement)</p></li>
+<li><p class="sd-card-text">What is your initial impression of the data? Is the treatment higher or lower than the control?</p></li>
+<li><p class="sd-card-text">If you do see a difference between the two comparison groups, is this significance statistically significant? What does that mean to you?</p></li>
+<li><p class="sd-card-text">Do you agree with the author’s original hypothesis?</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>GIS. Nobel Prize for H. pylori Discovery. Gastrointestinal Society <a class="reference external" href="https://badgut.org/information-centre/a-z-digestive-topics/nobel-prize-for-h-pylori-discovery/">https://badgut.org/information-centre/a-z-digestive-topics/nobel-prize-for-h-pylori-discovery/</a>.</p></li>
+<li><p>History of H. Pylori: What We Do and Don’t Know. <a class="reference external" href="http://EverydayHealth.com">EverydayHealth.com</a> <a class="reference external" href="https://www.everydayhealth.com/h-pylori/history-what-we-dont-know/">https://www.everydayhealth.com/h-pylori/history-what-we-dont-know/</a>.</p></li>
+<li><p>What is Microbiology? | Microbiology Society. <a class="reference external" href="https://microbiologysociety.org/why-microbiology-matters/what-is-microbiology.html">https://microbiologysociety.org/why-microbiology-matters/what-is-microbiology.html</a>.</p></li>
+<li><p>Nosil, P. Reproductive Isolation. in Brenner’s Encyclopedia of Genetics (Second Edition) (eds. Maloy, S. &amp; Hughes, K.) 173–176 (Academic Press, 2013). doi:10.1016/B978-0-12-374984-0.01307-3.</p></li>
+<li><p>Parte, A. C., Sardà Carbasse, J., Meier-Kolthoff, J. P., Reimer, L. C. &amp; Göker, M. 2020. List of Prokaryotic names with Standing in Nomenclature (LPSN) moves to the DSMZ. Int. J. Syst. Evol. Microbiol. 70, 5607–5612.</p></li>
+<li><p>Tabor, A. Could Electricity-Producing Bacteria Help Power Future Space Missions? NASA <a class="reference external" href="http://www.nasa.gov/feature/ames/could-electricity-producing-bacteria-help-power-future-space-missions">http://www.nasa.gov/feature/ames/could-electricity-producing-bacteria-help-power-future-space-missions</a> (2018).</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">MICB 211 E-Textbook Acknowledgements</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="unit1-chap2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 2: Microbial Cell Structures</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introducing-the-field-of-microbiology">1.1 Introducing the Field of Microbiology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-the-name-of-microbiology">1.1.1 In the name of microbiology!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attempting-to-define-microbiology">1.1.2 Attempting to define Microbiology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#environmental-microbiology-and-microbial-ecology">1.1.3 Environmental microbiology and microbial ecology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medical-microbiology">1.1.4 Medical microbiology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-many-branches-of-microbiology">1.1.5 The many branches of microbiology</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-the-world-of-prokaryotic-cells">1.2 Exploring the World of Prokaryotic Cells</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-we-classify-organisms">1.2.1 How we classify organisms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cellular-microbes">1.2.2 Cellular Microbes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beyond-domains-microbial-classification-and-diversity">1.3 Beyond domains: microbial classification and diversity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phyla">1.3.1 Phyla</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-microbiology-through-data-analysis">1.4 Understanding microbiology through data analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#journals">1.4.1 Journals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-data">1.4.2 Types of Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpreting-qualitative-data">1.4.3 Interpreting Qualitative Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpreting-quantitative-data">1.4.4 Interpreting Quantitative Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-getting-comfortable-with-data">Case Study: Getting comfortable with data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By MICB 211 Teaching Team led by Evelyn Sun
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
